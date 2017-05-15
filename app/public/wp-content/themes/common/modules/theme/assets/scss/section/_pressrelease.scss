@@ -1,0 +1,35 @@
+@import "section";
+
+.section-pressrelease {
+  ul {
+    margin: 0;
+    padding: 0 0 0 30px;
+
+    li {
+      font-size: 18px;
+      line-height: 20px;
+      padding: 0 0 20px;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+
+      a {
+        display: block;
+        margin-bottom: 5px;
+
+        &, &:hover, &:active {
+          color: #000;
+          text-decoration: none;
+        }
+      }
+
+      span {
+        color: #b2b2b2;
+      }
+      * {
+        font-size: 14px;
+      }
+    }
+  }
+}

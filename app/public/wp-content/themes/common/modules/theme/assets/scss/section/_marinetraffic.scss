@@ -1,0 +1,71 @@
+.marinetraffic-widget {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    h3 {
+        margin: 0 0 15px -25px;
+        padding: 0 10px 0 20px;
+        @media(min-width: $screen-sm-min) {
+            margin: 0 0 0 -30px;
+            padding: 0 25px 0 30px;
+        }
+    }
+    .partner-company {
+        display: inline-block;
+        float: right;
+        margin-top: 10px;
+        span {
+            color: #8f8f8f;
+            font-size: 14px;
+            letter-spacing: .5px;
+            line-height: 14px;
+        }
+        img {
+            max-width: 85px;
+            vertical-align: baseline;
+            @media(min-width: $screen-xs-min) {
+                max-width: none;
+            }
+        }
+    }
+    .down-arrow {
+        margin: 0 0 2px -30px;
+    }
+    .image-block {
+        position: relative;
+        img {
+            width: 100%;
+        }
+        .image-info {
+            background-color: rgba(0, 0, 0, 0.4);
+            bottom: 0;
+            color: #fff;
+            font-family: $droid-font; 
+            font-size: 14px;
+            font-weight: 700;
+            left: 0;
+            line-height: 14px;
+            outline: 0;
+            padding: 16px 0;
+            position: absolute;
+            right: 0;
+            text-align: center;
+            text-decoration: 0;
+        }
+    }
+}
+
+.marinetraffic-page {
+  padding-bottom: 50px;
+    .post-content h1 {
+        color: #262726;
+        font-family: $roboto-cond-font;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 50px;
+        @media(min-width: $screen-xs-min) {
+          font-size: 66px;
+          line-height: 68px;
+        }
+    }
+}

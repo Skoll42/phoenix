@@ -1,0 +1,100 @@
+.article-content-factbox {
+  border: 1px solid #d5d5d5;
+  clear: both;
+  margin: 35px 0;
+  padding: 7px 10px 0 10px;
+  @media(max-width: $screen-xs-min) {
+    margin: 0 0 25px 0;
+  }
+  @media(min-width: $screen-md-min) {
+    padding: 7px 25px 0 25px;
+  }
+  .accordion .accordion-heading {
+    margin-bottom: 7px;
+    .head-text {
+      color: #151515;
+      font-family: $titlinggothicfb-comp-font;
+      font-size: 32px;
+    }
+    .accordion-toggle {
+      color: #a3aba3;
+      float: right;
+      font-family: $default-font;
+      margin-top: 13px;
+      text-decoration: none;
+      .opened {
+        color: #a3aba3;
+        display: inline;
+      }
+      .closed {
+        color: #a3aba3;
+        display: none;
+      }
+      svg {
+        display: inline-block;
+        height: 20px;
+        margin: 5px 0 -5px 5px;
+        transform:rotate(-180deg);
+        -ms-transform:rotate(-180deg);
+        -webkit-transform:rotate(-180deg);
+        width: 25px;
+      }
+      &.collapsed {
+        .opened {
+          display: none;
+        }
+        .closed {
+          display: inline;
+        }
+        svg {
+          transform:rotate(0deg);
+          -ms-transform:rotate(0deg);
+          -webkit-transform:rotate(0deg);
+        }
+      }
+    }
+  }
+  .accordion-body {
+    .accordion-inner {
+      margin-bottom: 20px;
+      .content {
+        h2 {
+          margin-bottom: 20px;
+        }
+        img {
+          height: auto;
+        }
+        ul {
+          color: #151515;
+          list-style: none;
+          padding-left: 0;
+          li:before {
+            color: $main-color-sysla;
+            content: "\2022";
+            font-size: 1.5em;
+            padding-right: .25em;
+            position: relative;
+            top: .1em;
+          }
+        }
+      }
+    }
+  }
+  &.factbox-narrow {
+    margin: 0 auto 25px auto;
+    padding: 20px;
+    width: auto;
+    @media(min-width: $screen-xs-min) {
+      float: right;
+      margin-left: 20px;
+      width: 320px;
+    }
+    .title {
+      color: #151515;
+      font-family: $titlinggothicfb-comp-font;
+      font-size: 28px;
+      margin: 10px 0 15px;
+      text-align: center;
+    }
+  }
+}

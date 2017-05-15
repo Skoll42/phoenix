@@ -1,0 +1,108 @@
+/*
+
+### Creating new environment
+
+
+## New Environment
+
+Web Server Environment
+
+
+## Environment Type
+
+Predefined configuration: Multi-container Docker
+Environment type: Load balancing, auto scaling
+
+
+## Application Version
+
+Source: Sample Application
+
+
+## Environment Information
+
+Environment name: phoenix-prod
+Environment URL: phoenix-prod
+Description: Phoenix Production
+
+
+## Additional Resources
+
+Check "Create this environment inside a VPC"
+
+
+## Configuration Details
+
+Instance type: t2.medium
+EC2 key pair: betavest-prod
+Email address: kr@betavest.no
+Application health check URL:
+
+
+## Environment Tags
+
+Application: Phoenix
+Stack: Production
+
+
+## VPC Configuration
+
+VPC: Should select production VPC
+Uncheck "Associate Public IP Address"
+    ELB: x.x.5x.x
+    EC2: x.x.8x.x
+VPC security group: phoenix-production-nat
+
+
+
+### Tuning environment
+
+
+## Instances
+
+EC2 security groups:  "Phoenix Production App"
+
+
+## Software Configuration
+
+Add Environment Properties:
+  WP_ENV = prod
+  AWS_ACCESS_KEY_ID
+  AWS_SECRET_ACCESS_KEY
+
+  RDS_HOST
+  RDS_DB_NAME
+  RDS_USERNAME
+  RDS_PASSWORD
+
+
+## Health
+
+Application health check URL: /php_ping
+
+
+## Scaling
+
+Auto Scaling:
+  Min = 1
+  Max = 3
+
+Scaling Trigger:
+  Trigger measurement: CPUUtilization
+  Trigger statistic: Average
+  Unit of measurement: Percent
+  Upper threshold: 70
+  Lower threshold: 10
+
+
+
+
+### Tuning ELB
+
+Go to EC2 Console
+Then go to Load Balancers
+Select your Load Balancer
+Go to tab Security
+Add security group "Phoenix Production ELB"
+
+*/

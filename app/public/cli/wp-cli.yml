@@ -1,0 +1,7 @@
+path: ../wp
+user: gullkysten_sysla
+color: true
+disabled_commands:
+  - db drop
+require:
+  - wpcli-bt/autoload.php

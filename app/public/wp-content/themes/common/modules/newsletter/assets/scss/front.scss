@@ -1,0 +1,471 @@
+@import "./../../../theme/assets/scss/variables";
+
+.newsletter-block {
+  border: 1px solid #b4b4b4;
+  font-family: $droid-font;
+  margin: 0;
+  padding: 25px 25px 20px;
+  &.category-border-bottom {
+    border-bottom-width: 4px;
+  }
+  @media(min-width: $screen-sm-min) {
+    height: 555px;
+    padding: 70px 35px 20px;
+  }
+  @media(min-width: $screen-md-min) {
+    height: auto;
+  }
+  @media(min-width: $screen-lg-min) {
+    height: 600px;
+  }
+  .stylized-checkbox {
+    cursor: pointer;
+    position: relative;
+    [type="checkbox"] {
+      display: none;
+      & + span {
+        display: inline-block;
+        height: 14px;
+        margin-right: 10px;
+        vertical-align: middle;
+        width: 14px;
+        svg {
+          background-color: #fff;
+          border: 2px solid #c7c5c5;
+          display: block;
+          height: 14px;
+          width: 14px;
+          rect {
+            display: none;
+          }
+        }
+      }
+      &:checked + span {
+        svg {
+          background-color: transparent;
+          border: none;
+          fill: #fff;
+          rect {
+            display: inline-block;
+          }
+        }
+      }
+      &:disabled:checked + span {
+        svg {
+          background-color: #c7c5c5;
+        }
+      }
+    }
+  }
+  .subscribe-title {
+    color: #000104;
+    font-family: $title-font;
+    font-size: 36px;
+    letter-spacing: .25px;
+    line-height: 36px;
+    margin-bottom: 25px;
+    text-align: center;
+    @media(min-width: $screen-xs-min) {
+      font-size: 42px;
+      line-height: 42px;
+    }
+    @media(min-width: $screen-sm-min) {
+      font-size: 78px;
+      line-height: 78px;
+      margin-bottom: 40px;
+    }
+  }
+  .subscribe-list {
+    border-top: 1px solid #eaeaea;
+    margin: 0 25px 0;
+    padding: 20px 0 10px;
+    .subscribe-row .subscribe-cell {
+      display: block;
+      margin: 0 auto;
+      padding-bottom: 15px;
+      width: 120px;
+    }
+    @media(min-width: $screen-sm-min) {
+      border-bottom: 1px solid #eaeaea;
+      display: table;
+      margin: 0 auto 30px;
+      padding: 20px 0;
+      width: 400px;
+
+      .subscribe-row {
+        display: table-row;
+        .subscribe-cell {
+          display: table-cell;
+          margin: 0;
+          padding: 10px 0 0;
+          width: auto;
+        }
+        &:first-child .subscribe-cell {
+          padding-top: 0;
+        }
+      }
+    }
+    .stylized-checkbox {
+      .subscribe-logo {
+        display: inline-block;
+        vertical-align: middle;
+        svg {
+          height: 20px;
+        }
+        /* IE 10+ bug */
+        &.subscribe-logo-sysla svg {
+          width: 62px;
+        }
+        &.subscribe-logo-gronn svg {
+          width: 55px;
+        }
+        &.subscribe-logo-jobb svg {
+          width: 44px;
+        }
+        &.subscribe-logo-offshore svg {
+          width: 90px;
+        }
+        &.subscribe-logo-maritim svg {
+          width: 77px;
+        }
+      }
+    }
+  }
+  .subscribe-bottom-title {
+    color: #000104;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: center;
+  }
+  .subscribe-agree {
+    margin-top: 15px;
+    text-align: center;
+    .stylized-checkbox {
+      color: #000104;
+      font-size: 10px;
+      line-height: 12px;
+      margin-bottom: 0;
+      padding-left: 5px;
+      text-align: left;
+      width: 85%;
+      @media(min-width: $screen-xs-min) {
+        width: auto;
+      }
+      a {
+        outline: 0;
+        text-decoration: none;
+      }
+      [type="checkbox"] + span {
+        height: 12px;
+        margin-right: 5px;
+        width: 12px;
+        svg {
+          border-width: 1px;
+          height: 12px;
+          width: 12px;
+        }
+      }
+    }
+  }
+  .subscribe-email {
+    margin: 20px auto 0;
+    max-width: 400px;
+    min-width: 228px;
+    text-align: center;
+    @media(min-width: $screen-sm-min) {
+      margin-top: 50px;
+    }
+    input {
+      border: 1px solid;
+      border-radius: 22px;
+      display: block;
+      font-size: 14px;
+      line-height: 14px;
+      margin-bottom: 20px;
+      outline: 0;
+      padding: 11px 12px;
+      width: 100%;
+      @media(min-width: $screen-sm-min) {
+        display: inline-block;
+        margin-bottom: 0;
+        width: 270px;
+      }
+      @media(min-width: $screen-md-min) {
+        width: 250px;
+      }
+      @media(min-width: $screen-lg-min) {
+        width: 270px;
+      }
+      &::-webkit-input-placeholder,
+      &:-ms-input-placeholder,
+      &:-moz-placeholder,
+      &::-moz-placeholder {
+        color: #c7c7c7;
+      }
+    }
+    .subscribe-button {
+      display: inline-block;
+      @media(min-width: $screen-sm-min) {
+        margin-left: 7px;
+      }
+      input {
+        border: 1px solid $main-color-sysla;
+        border-radius: 22px;
+        color: #fff;
+        display: inline-block;
+        font-family: $title-font;
+        font-size: 18px;
+        letter-spacing: 1px;
+        line-height: 18px;
+        outline: 0;
+        padding: 10px 30px;
+        margin-bottom: 0;
+        text-decoration: none;
+        text-transform: uppercase;
+        @media(min-width: $screen-sm-min) {
+          padding: 10px;
+          width: 123px;
+        }
+        @media(min-width: $screen-md-min) {
+          width: 143px;
+        }
+        @media(min-width: $screen-lg-min) {
+          width: 123px;
+        }
+      }
+    }
+  }
+  .subscribe-message {
+    color: #000104;
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 25px;
+    text-align: center;
+    @media(min-width: $screen-sm-min) {
+      margin-top: 50px;
+    }
+    .error {
+       color: $main-color-sysla;;
+    }
+  }
+  .loader {
+    background: url('../img/ajax-loader.gif') no-repeat;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+  }
+}
+
+/* Custom newsletter forms */
+
+.mc4wp-form {
+    margin-bottom: 25px;
+    /* Sysla main form begin */
+    .newsletter-sysla-main {
+        background: url('../img/newsletter-background.png') no-repeat;
+        color: #000104;
+        font-family: $hind-font;
+        padding: 60px 0 70px;
+        text-align: center;
+        h3 {
+            color: #000104;
+            font-family: $title-font;
+            font-size: 36px;
+            line-height: 36px;
+            margin: 0 0 20px 0;
+        }
+        .slogan {
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 30px;
+        }
+        .input-group {
+            display: block;
+            font-size: 14px;
+            line-height: 14px;
+            .form-control {
+                border: 1px solid $main-color-sysla;
+                border-radius: 5px;
+                color: #000104;
+                display: inline-block;
+                float: none;
+                outline: 0;
+                padding: 10px 10px 8px;
+                width: 195px;
+                @media(min-width: $screen-xs-min) {
+                    margin-right: 10px;
+                }
+                &::-webkit-input-placeholder {
+                  color: #c7c7c7;
+                }
+                &::-moz-placeholder {
+                  color: #c7c7c7;
+                }
+                &:-ms-input-placeholder {
+                  color: #c7c7c7;
+                }
+                &:-moz-placeholder {
+                  color: #c7c7c7;
+                }
+            }
+            .submit-button {
+                background-color: $main-color-sysla;
+                border: 0;
+                border-radius: 5px;
+                color: #fff;
+                display: inline-block;
+                padding: 10px 10px 8px;
+            }
+        }
+    }
+    /* Sysla main form end */
+    .mc4wp-response {
+      color: $main-color-sysla;
+    }
+    .newsletter-black {
+      margin-bottom: 60px;
+      padding: 0;
+      .newsletter-body {
+        color: #FFFFFF;
+        margin-top: -48%;
+        padding: 0 0 3% 0;
+        position: relative;
+        @media(min-width: 360px) {
+          padding: 0 0 7% 0;
+        }
+        @media(min-width: 385px) {
+          margin-top: -36%;
+          padding: 0 0 8% 0;
+        }
+        @media(min-width: 580px) {
+          padding: 0 0 12% 0;
+        }
+        @media(min-width: 660px) {
+          padding: 0 0 15% 0;
+        }
+        @media(min-width: $screen-sm-min) {
+          padding: 0 0 8% 0;
+        }
+        h3 {
+          border: none;
+          color: #000000;
+          font-family: $title-font;
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 26px;
+          text-align: center;
+          text-transform: uppercase;
+          @media(min-width: $screen-sm-min) {
+            font-size: 30px;
+            line-height: 32px;
+          }
+        }
+        .slogan-wrapper {
+          margin-top: 7px;
+          padding-left: 5%;
+          padding-right: 5%;
+          @media(min-width: $screen-xs-min) {
+            margin-top: 30px;
+            padding-left: 10%;
+            padding-right: 10%;
+          }
+          @media(min-width: $screen-md-min) {
+            margin-top: 8px;
+          }
+          @media(min-width: $screen-lg-min) {
+            margin-top: 30px;
+          }
+          [class^="slogan-line-"] {
+            border-bottom: 2px solid #FFFFFF;
+            opacity: 0.4;
+            width: 12%;
+            @media(min-width: $screen-xs-min) {
+              width: 14%;
+            }
+            @media(min-width: $screen-sm-min) {
+              width: 16%;
+            }
+          }
+          .slogan-line-left {
+            float: left;
+          }
+          .slogan-line-right {
+            float: right;
+          }
+        }
+        .slogan {
+          font-family: $hind-font;
+          font-size: 12px;
+          margin-top: -10px;
+          padding-left: 4px;
+          padding-right: 4px;
+          text-align: center;
+          @media(min-width: $screen-sm-min) {
+            font-size: 14px;
+            margin-top: -9px;
+          }
+        }
+        .input-group {
+          font-family: $hind-font;
+          font-size: 16px;
+          margin: 5px auto 0;
+          width: 275px;
+          @media(min-width: $screen-xs-min) {
+            margin: 5px auto 0;
+          }
+          @media(min-width: $screen-sm-min) {
+            margin: 35px auto 0;
+          }
+          @media(min-width: $screen-md-min) {
+            margin: 18px auto 0;
+          }
+          @media(min-width: $screen-lg-min) {
+            margin: 35px auto 0;
+          }
+          #mc4wp_email {
+            -webkit-box-shadow: inset 2px 2px 2px 0px #dddddd;
+            -moz-box-shadow: inset 2px 2px 2px 0px #dddddd;
+            box-shadow: inset 2px 2px 2px 0px #dddddd;
+            border-radius: 2px;
+            min-height: 36px;
+            padding-bottom: 3px;
+            padding-right: 100px;
+            padding-top: 6px;
+            position: static;
+            z-index: auto;
+            &::-webkit-input-placeholder {
+              color: #5a5a5a;
+              padding: 2px 6px;
+            }
+            &:-moz-placeholder {
+              color: #5a5a5a;
+              padding: 2px 6px;
+            }
+            &::-moz-placeholder {
+              color: #5a5a5a;
+              padding: 2px 6px;
+            }
+            &:-ms-input-placeholder {
+              color: #5a5a5a;
+              padding: 5px 6px 2px;
+            }
+          }
+          .input-group-btn {
+            position: relative;
+            .submit-email-button {
+              background-color: #F00;
+              border: 1px solid #237E1F;
+              border-radius: 1px;
+              color: #FFF;
+              height: 28px;
+              left: -94px;
+              padding: 5px 10px;
+              position: absolute;
+              top: 4px;            
+            }
+          }
+        }
+      }
+    }
+}

@@ -1,0 +1,158 @@
+{
+    "key": "group_5812950ebe503",
+    "title": "Fishiri settings",
+    "fields": [
+        {
+            "default_value": "http:\/\/fishiri.sysla.no",
+            "placeholder": "",
+            "key": "field_5812954442ada",
+            "label": "Fishiri API base url",
+            "name": "fishiri_api_base_url",
+            "type": "url",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_5812956842adb",
+            "label": "Fishiri Client Id",
+            "name": "fishiri_client_id",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_5812957742adc",
+            "label": "Fishiri Client Secret",
+            "name": "fishiri_client_secret",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "default_value": "https:\/\/fusiontables.googleusercontent.com\/embedviz?q=select+col2+from+1mvVN3d_9xESPKe0t99TBL_ySsNsvjlxqHLu0sqI8+where+col7+%3D+%27I+opplag%27&viz=MAP&h=false&lat=60.374292850277214&lng=12.610088683692425&t=1&z=5&l=col2&y=2&tmplt=2&hml=GEOCODABLE",
+            "new_lines": "",
+            "maxlength": "",
+            "placeholder": "",
+            "rows": "",
+            "key": "field_58dcf7b45ccf2",
+            "label": "DockedShips Head",
+            "name": "dockedships_head",
+            "type": "textarea",
+            "instructions": "Fill in map",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "default_value": "<strong>NYTT: N\u00e5 vises de siste skipene som er lagt inn i registeret \u00f8verst i oversikten under!<\/strong> Dette er en\u00a0oversikt over norske offshore-skip\u00a0som ligger i opplag. Du kan sortere listen etter rederi, segment og status. Klikk deg rundt i kartet over for \u00e5 se hvor skipene ligger.\u00a0<span style=\"line-height: 1.5em;\">Informasjonen i registeret kommer fra mange forskjellige kilder, og dere lesere er en uvurderlig ressurs for oss i dette arbeidet. Vet du noe vi ikke vet? Tips\u00a0oss p\u00e5 <a href=\"mailto:redaksjonen@maritime.no\" target=\"_blank\">redaksjonen@maritime.no.<\/a>\u00a0<a href=\"https:\/\/fusiontables.google.com\/embedviz?q=select+col2+from+1mvVN3d_9xESPKe0t99TBL_ySsNsvjlxqHLu0sqI8+where+col7+%3D+'I+opplag'&amp;viz=MAP&amp;h=false&amp;lat=23.228244523985563&amp;lng=53.939398125000025&amp;t=1&amp;z=2&amp;l=col2&amp;y=2&amp;tmplt=2&amp;hml=GEOCODABLE\" target=\"_blank\">Klikk her for fullskjermvisning av kartet.<\/a><\/span>\n\n&nbsp;",
+            "delay": 0,
+            "key": "field_58dcf7df5ccf3",
+            "label": "DockedShips header text",
+            "name": "dockedships_header_text",
+            "type": "wysiwyg",
+            "instructions": "Fill in the text to be displayed on dockedships page",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_58dcf8bf81ae1",
+            "label": "DockedShips Title",
+            "name": "dockedships_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "new_lines": "",
+            "maxlength": "",
+            "placeholder": "",
+            "rows": "",
+            "key": "field_58dcf8d481ae2",
+            "label": "DockedShips Excerpt",
+            "name": "dockedships_excerpt",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "fishiri-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1490876653
+}

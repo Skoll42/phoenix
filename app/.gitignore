@@ -1,0 +1,51 @@
+# WP ignores
+/public/wp/
+
+# WP CLI
+/public/cli/wp
+
+/public/phpmyadmin/
+
+/public/rev.txt
+/public/wp-content/log/
+
+/public/wp-content/uploads/*
+!/public/wp-content/uploads/.gitkeep
+
+# Plugins
+/public/wp-content/plugins/*
+!/public/wp-content/plugins/e24feed/
+!/public/wp-content/plugins/sickfront/
+/public/wp-content/plugins/sickfront/assets/css/
+
+# Cache
+/public/nginx.conf
+/public/wp-content/cache/*
+!/public/wp-content/uploads/.gitkeep
+/public/wp-content/cache/minify/*
+!/public/wp-content/cache/minify/.gitkeep
+
+# Image Optimize
+/public/wp-content/ewww/*
+!/public/wp-content/ewww/.gitkeep
+
+# Themes
+/public/wp-content/themes/common/assets/css/styles.css
+/public/wp-content/themes/common/assets/css/styles.css.map
+/public/wp-content/themes/common/**/*.min.css
+/public/wp-content/themes/common/**/*.min.js
+
+/public/wp-content/themes/common/modules/**/bt-*.css
+/public/wp-content/themes/common/modules/**/bt-*.css.map
+
+/public/wp-content/themes/common/modules/**/front.css
+/public/wp-content/themes/common/modules/**/front.css.map
+
+/public/wp-content/themes/common/modules/**/admin.css
+/public/wp-content/themes/common/modules/**/admin.css.map
+
+
+# Package ignores
+/vendor/
+/node_modules/
+/.sass-cache/

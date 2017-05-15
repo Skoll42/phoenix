@@ -1,0 +1,181 @@
+{
+    "key": "group_58c7f8200bae5",
+    "title": "Web Widget Settings",
+    "fields": [
+        {
+            "taxonomy": "category",
+            "field_type": "checkbox",
+            "multiple": 0,
+            "allow_null": 0,
+            "return_format": "id",
+            "add_term": 0,
+            "load_terms": 0,
+            "save_terms": 0,
+            "key": "field_58c7f83c8fd0b",
+            "label": "Exclude categories from latest list",
+            "name": "webwidget_latest_exclude_categories",
+            "type": "taxonomy",
+            "instructions": "<a href=\"\/webwidget\/\" target=\"_blank\">\/webwidget\/<\/a> or <a href=\"\/webwidget\/latest\/\" target=\"_blank\">\/webwidget\/latest\/<\/a> or <a href=\"\/webwidget\/latest2\/\" target=\"_blank\">\/webwidget\/latest2\/<\/a>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "post_type": [
+                "post",
+                "podcast"
+            ],
+            "taxonomy": [],
+            "min": "",
+            "max": "",
+            "filters": [
+                "search",
+                "taxonomy"
+            ],
+            "elements": "",
+            "return_format": "id",
+            "key": "field_58c8104d0c492",
+            "label": "AP",
+            "name": "webwidget_ap_posts",
+            "type": "relationship",
+            "instructions": "<a href=\"\/webwidget\/ap\/\" target=\"_blank\">\/webwidget\/ap\/<\/a> or <a href=\"\/webwidget\/ap2\/\" target=\"_blank\">\/webwidget\/ap2\/<\/a>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "post_type": [
+                "post",
+                "podcast"
+            ],
+            "taxonomy": [],
+            "min": "",
+            "max": "",
+            "filters": [
+                "search",
+                "taxonomy"
+            ],
+            "elements": "",
+            "return_format": "id",
+            "key": "field_58c810280c491",
+            "label": "BT",
+            "name": "webwidget_bt_posts",
+            "type": "relationship",
+            "instructions": "<a href=\"\/webwidget\/bt\/\" target=\"_blank\">\/webwidget\/bt\/<\/a> or <a href=\"\/webwidget\/bt2\/\" target=\"_blank\">\/webwidget\/bt2\/<\/a>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "post_type": [
+                "post",
+                "podcast"
+            ],
+            "taxonomy": [],
+            "min": "",
+            "max": "",
+            "filters": [
+                "search",
+                "taxonomy"
+            ],
+            "elements": "",
+            "return_format": "id",
+            "key": "field_58c7fa349e76f",
+            "label": "E24",
+            "name": "webwidget_e24_posts",
+            "type": "relationship",
+            "instructions": "<a href=\"\/webwidget\/e24\/\" target=\"_blank\">\/webwidget\/e24\/<\/a> or <a href=\"\/webwidget\/e242\/\" target=\"_blank\">\/webwidget\/e242\/<\/a>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "post_type": [
+                "post",
+                "podcast"
+            ],
+            "taxonomy": [],
+            "min": "",
+            "max": "",
+            "filters": [
+                "search",
+                "taxonomy"
+            ],
+            "elements": "",
+            "return_format": "id",
+            "key": "field_58c810610c493",
+            "label": "FVN",
+            "name": "webwidget_fvn_posts",
+            "type": "relationship",
+            "instructions": "<a href=\"\/webwidget\/fvn\/\" target=\"_blank\">\/webwidget\/fvn\/<\/a> or <a href=\"\/webwidget\/fvn2\/\" target=\"_blank\">\/webwidget\/fvn2\/<\/a>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "post_type": [
+                "post",
+                "podcast"
+            ],
+            "taxonomy": [],
+            "min": "",
+            "max": "",
+            "filters": [
+                "search",
+                "taxonomy"
+            ],
+            "elements": "",
+            "return_format": "id",
+            "key": "field_58c810e00c498",
+            "label": "SA",
+            "name": "webwidget_sa_posts",
+            "type": "relationship",
+            "instructions": "<a href=\"\/webwidget\/sa\/\" target=\"_blank\">\/webwidget\/sa\/<\/a> or <a href=\"\/webwidget\/sa2\/\" target=\"_blank\">\/webwidget\/sa2\/<\/a>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-web-widget"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1489606999
+}

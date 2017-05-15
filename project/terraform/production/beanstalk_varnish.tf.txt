@@ -1,0 +1,96 @@
+/*
+
+### Creating new environment
+
+
+## New Environment
+
+Web Server Environment
+
+
+## Environment Type
+
+Predefined configuration: Docker
+Environment type: Load balancing, auto scaling
+
+
+## Application Version
+
+Source: Sample Application
+
+
+## Environment Information
+
+Environment name: phoenix-prod-varnish
+Environment URL: phoenix-prod-varnish
+Description: Phoenix Production Varnish
+
+
+## Additional Resources
+
+Check "Create this environment inside a VPC"
+
+
+## Configuration Details
+
+Instance type: m3.medium
+EC2 key pair: betavest-prod
+Email address: kr@betavest.no
+Application health check URL:
+
+
+## Environment Tags
+
+Application: Phoenix
+Stack: Production
+
+
+## VPC Configuration
+
+VPC: Should select production VPC
+Uncheck "Associate Public IP Address"
+    ELB: x.x.4x.x
+    EC2: x.x.7x.x
+VPC security group: phoenix-production-nat
+
+
+
+### Tuning environment
+
+
+## Instances
+
+EC2 security groups:  "Phoenix Production Frontend"
+
+
+## Software Configuration
+
+Add Environment Properties:
+  APP_HOSTNAME
+
+
+## Scaling
+
+Auto Scaling:
+  Min = 1
+  Max = 1
+
+Scaling Trigger:
+  Trigger measurement: CPUUtilization
+  Trigger statistic: Average
+  Unit of measurement: Percent
+  Upper threshold: 70
+  Lower threshold: 10
+
+
+
+
+### Tuning ELB
+
+Go to EC2 Console
+Then go to Load Balancers
+Select your Load Balancer
+Go to tab Security
+Add security group "Phoenix Production Frontend ELB"
+
+*/

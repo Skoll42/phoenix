@@ -1,0 +1,1 @@
+<div class="login-wrapper hidden-xs spid-user-status-<?php echo $__data['status']; ?>"><a href="#" class="user-name" data-toggle="modal" data-target="#extended-menu"></a></div>

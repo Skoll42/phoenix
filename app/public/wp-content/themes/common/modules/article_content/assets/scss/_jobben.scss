@@ -1,0 +1,40 @@
+.article-content-jobben {
+  border: 1px solid #d5d5d5;
+  color: #151515;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0 auto 25px;
+  padding: 30px 20px;
+  width: auto;
+  @media(min-width: $screen-xs-min) {
+    width: 320px;
+  }
+  @media(min-width: $screen-sm-min) {
+    float: right;
+    margin-bottom: 25px;
+    margin-left: 20px;
+  }
+  h3 {
+    font-family: $titlinggothicfb-comp-font;
+    font-size: 28px;
+    line-height: 30px;
+    margin-bottom: 25px;
+    margin-top: 0;
+    text-align: center;
+  }
+  span {
+    color: $main-color-sysla;;
+  }
+  .jobben-image {
+    margin-bottom: 20px;
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+  .jobben-content {
+    ul {
+      margin: 0 !important;
+    }
+  }
+}

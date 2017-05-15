@@ -1,0 +1,50 @@
+@import "../../../theme/assets/scss/variables";
+
+.job-positions {
+    margin-bottom: 10px;
+    @media(min-width: $screen-sm-min) {
+        margin-bottom: 30px;
+      }
+    .job-header {
+        background-color: #f5d823;
+        padding: 20px;
+        .job-title {
+            color: #000;
+            display: inline-block;
+            font-family: $titlinggothicfb-comp-font;
+            font-size: 28px;
+            letter-spacing: .15px;
+            line-height: 28px;
+            a {
+                color: #000;
+
+                &:hover, &:focus, &:active {
+                    color: #000;
+                    text-decoration: none;
+                }
+            }
+        }
+        .annonse-title {
+            color: #000104;
+            display: inline-block;
+            float: right;
+            font-family: $opensans-condensed-font;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 28px;
+        }
+    }
+    .latest-jobs-container {
+        font-size: 0;
+    }
+}
+
+.stillinger-page {
+    background-color: #FFFFFF;
+    .jobb-page-container {
+        padding: 0;
+        @media(min-width: $screen-lg-min) {
+            padding: 0 15px;
+        }
+    }
+}

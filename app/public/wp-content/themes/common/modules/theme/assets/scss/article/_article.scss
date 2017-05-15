@@ -1,0 +1,36 @@
+.article {
+  margin-bottom: 10px;
+  @media(min-width: $screen-sm-min) {
+    margin-bottom: 30px;
+  } 
+  .header  {
+    background-color: #fff;
+    img {
+      width: 100%;
+    }    
+  }
+  h4 {
+    margin: 0;
+    a {
+      background-color: #fff;
+      color: #000104;
+      display: block;
+      font-size: 38px;
+      letter-spacing: 1px;
+      line-height: 40px;
+      outline: 0;
+      padding: 15px 10px;
+      text-decoration: none;
+    }
+  }
+  &.article-medium h4 a {
+    font-size: 38px;
+    line-height: 40px;
+    padding: 15px 10px;
+    @media(min-width: $screen-sm-min) {
+      font-size: 54px;
+      line-height: 56px;
+      padding: 20px 10px;
+    }
+  }
+}

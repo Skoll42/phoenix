@@ -1,0 +1,21 @@
+[submodule "ops"]
+	path = ops
+	url = git@github.com:Sysla/wp-ops.git
+[submodule "varnish"]
+	path = varnish
+	url = git@github.com:Sysla/wp-varnish.git
+[submodule "app/composer-artifacts"]
+	path = app/composer-artifacts
+	url = git@github.com:Sysla/composer-artifacts.git
+[submodule "app/public/cli/wpcli-bt"]
+	path = app/public/cli/wpcli-bt
+	url = git@github.com:Sysla/wpcli-bt.git
+[submodule "app/public/wp-content/themes/theme-base"]
+	path = app/public/wp-content/themes/theme-base
+	url = git@github.com:Sysla/wp-theme-base.git
+[submodule "app/public/wp-content/mu-plugins/bt-framework"]
+	path = app/public/wp-content/mu-plugins/bt-framework
+	url = git@github.com:Sysla/wp-plugin-bt-framework.git
+[submodule "project/terraform/modules"]
+	path = project/terraform/modules
+	url = git@github.com:Sysla/terraform-modules.git

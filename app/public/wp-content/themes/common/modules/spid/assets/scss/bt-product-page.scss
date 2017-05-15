@@ -1,0 +1,281 @@
+@import "./../../../theme/assets/scss/_variables.scss";
+
+.back-button {
+  font-family: 'Georgia', sans-serif;
+  a {
+    color: #a9a9a9;
+    font-size: 10px;
+    font-style: italic;
+    letter-spacing: .5px;
+    line-height: 10px;
+    span {
+      color: #262726;
+    }
+  }
+  &:before {
+    border-bottom: 4px solid transparent;
+    border-right: 5px solid #000;
+    border-top: 4px solid transparent;
+    content: '';
+    display: inline-block;
+    margin-right: 3px;
+    vertical-align: middle;
+  }
+}
+
+.product-page {  
+  font-family: $titlinggothicfb-comp-font;
+  margin-top: -30px;
+  @media (min-width: $screen-sm-min) {
+    margin-top: 0;
+  }
+  @media (min-width: $screen-md-min) {
+    background-color: #f0f0f0;
+  }
+  .container {
+    background-color: #fff;
+  }
+  &> .container {
+    .row {      
+      @media (min-width: $screen-md-min) {
+        padding: 0 50px;
+      }
+      @media (min-width: $screen-lg-min) {
+        padding: 0 110px;
+      }
+      .col-sm-4 {
+        padding: 0 10px;
+      }
+    }
+  }
+  .price-block {
+    background-color: #f6f6f6;
+    border: 1px solid #b5b5b5;
+    margin-top: 30px;
+    padding: 40px 45px 25px;
+    text-align: center;
+    @media (min-width: $screen-sm-min) {
+      padding: 30px 35px 20px;
+    }
+    @media (min-width: $screen-md-min) {
+      margin-top: 50px;
+      padding: 40px 30px 25px;
+    }
+    .price-wrapper {
+      min-height: 80px;
+      @media (min-width: $screen-md-min) {
+        min-height: 95px;
+      }
+      .price {
+        color: #241d1d;      
+        font-size: 48px;
+        letter-spacing: .15px;
+        line-height: 48px;
+        @media (min-width: $screen-sm-min) {
+          font-size: 38px;
+          line-height: 38px;
+        }
+        @media (min-width: $screen-md-min) {
+          font-size: 48px;
+          line-height: 48px;
+        }
+        span {
+          color: $main-color-sysla;
+        }
+      }
+      .price-note {
+        color: #b3b3b3;
+        font-size: 20px;
+        letter-spacing: .25px;
+        line-height: 20px;
+        margin-top: 20px;
+        @media (min-width: $screen-sm-min) {
+          font-size: 16px;
+          line-height: 16px;
+          margin-top: 15px;
+        }
+        @media (min-width: $screen-md-min) {
+          font-size: 20px;
+          line-height: 20px;
+          margin-top: 20px;
+        }
+      }
+    }    
+    .price-line-divider {
+      background-color: #cdcdcd;
+      height: 2px;
+      margin: 25px auto 40px;
+      width: 115px;
+      @media (min-width: $screen-sm-min) {
+        margin: 15px auto 30px;
+      }
+      @media (min-width: $screen-md-min) {
+        margin: 25px auto 40px;
+      }
+    }
+    .action-button {
+      text-align: center;
+      button, a {
+        background-color: $main-color-sysla;
+        border: 0;
+        color: #fff;
+        display: inline-block;
+        font-size: 24px;
+        letter-spacing: .25px;
+        line-height: 24px;
+        outline: 0;
+        padding: 20px 40px;
+        text-transform: uppercase;
+        text-decoration: none;
+        @media (min-width: $screen-sm-min) {
+          font-size: 18px;
+          line-height: 18px;
+          padding: 15px 30px;
+        }
+        @media (min-width: $screen-md-min) {
+          font-size: 24px;
+          line-height: 24px;
+          padding: 20px 40px;
+        }
+      }
+    }
+    &.price-block-third {
+      .price-wrapper {
+        .price {
+          font-size: 40px;
+          line-height: 40px;
+          @media (min-width: $screen-md-min) {
+            font-size: 32px;
+            line-height: 32px;
+          }
+          @media (min-width: $screen-md-min) {
+            font-size: 40px;
+            line-height: 40px;
+          }
+        }
+      }      
+    }
+  }
+  .sites-information {
+    .sites-divider {
+      background-color: #cdcdcd;
+      height: 2px;
+      margin: 80px auto 60px;
+      width: 115px;
+      @media (min-width: $screen-sm-min) {
+        margin: 75px auto 50px;
+      }
+      @media (min-width: $screen-md-min) {
+        margin: 90px auto 50px;
+      }
+      &.sites-divider-bottom {
+        margin: 40px auto 70px;
+        @media (min-width: $screen-sm-min) {
+          margin: 50px auto 75px;
+        }
+        @media (min-width: $screen-md-min) {
+          margin: 50px auto 90px;
+        }
+      }
+    }
+    .logos {
+      padding: 0;
+      .maritim {
+        width: 200px;
+      }
+      .offshore {
+        width: 210px;
+      }
+      .sysla {
+        width: 90px;
+      }
+      .syslagronn {
+        width: 170px;
+      }
+      div {
+        display: block;
+        height: 35px;
+        margin: 0 auto 30px;
+        @media (min-width: $screen-sm-min) {
+          margin: 0 6px;
+          display: inline-block;
+        }
+        @media (min-width: $screen-md-min) {
+          margin: 0 15px;
+          display: inline-block;
+        }
+        .site-logo {
+          display: inline-block;
+          position: relative;
+          &.sysla-small, &.logo-small {
+            svg {
+              height: 34px;
+              width: 78px;
+            }
+          }
+          &.logo-small {
+            svg {
+              height: 34px;
+              // IE 10+ bug fix
+              &#svg-sysla-section {
+                width: 78px;
+              }
+              &#svg-gronn-section {
+                width: 77px;
+              }
+              &#svg-offshore-section {
+                width: 113px;
+              }
+              &#svg-maritim-section {
+                width: 99px;
+              }
+            }
+          }
+        }
+        .logo-divider {
+          background-color: #bbbbbb;
+          display: inline-block;
+          height: 35px;
+          margin: 0 5px;
+          width: 1px;
+        }
+      }
+    }
+  }
+  .price-information {
+    font-family: $default-font;
+    font-size: 18px;
+    line-height: 26px;
+    @media (min-width: $screen-sm-min) {
+      font-size: 14px;
+    }
+    @media (min-width: $screen-md-min) {
+      font-size: 18px;
+    }
+    .price-wrapper {
+      margin-bottom: 40px;
+      @media (min-width: $screen-md-min) {
+        margin-bottom: 90px;
+      }
+    }
+    .container {
+      .row {
+        @media (min-width: $screen-sm-min) {
+          padding: 0 40px;
+        }        
+        @media (min-width: $screen-md-min) {
+          padding: 0 120px;
+        }
+        @media (min-width: $screen-lg-min) {
+          padding: 0 175px;
+        }
+      }
+    }
+    .price-title {
+      font-weight: bold;
+    }
+    .price-excerpt {
+      margin-bottom: 40px;
+    }
+  }
+}

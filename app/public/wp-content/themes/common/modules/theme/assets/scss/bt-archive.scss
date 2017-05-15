@@ -1,0 +1,34 @@
+@import "variables";
+@import "article/article";
+@import "block/snappet";
+@import "section/section";
+@import "section/meninger";
+@import "section/mestlest";
+@import "section/podcast";
+@import "section/subscription";
+@import "section/kontrakter";
+@import "section/marinetraffic";
+@import "section/gronnfeed";
+
+body {
+  font-family: $title-font;
+}
+
+.horizontal-separator {
+	background-color: #e1e1e1;
+	height: 1px;
+	margin: 20px 0 30px;
+	@media(min-width: $screen-sm-min) {
+		margin: 0 0 30px;
+	}
+}
+
+.gronn-graph {
+	margin-bottom: 10px;
+	@media(min-width: $screen-sm-min) {
+		margin-bottom: 30px;
+	} 
+	img {
+		width: 100%;
+	}
+}

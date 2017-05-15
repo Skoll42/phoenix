@@ -1,0 +1,136 @@
+@import "./../../../theme/assets/scss/_variables.scss";
+
+.shipdata-widget.section-common {
+  h3 {
+    margin: 0 0 30px -25px;
+    padding: 0 25px 0 20px;
+    @media(min-width: $screen-sm-min) {
+      margin: 0 0 0 -30px;
+      padding: 0 25px 0 30px;
+    }
+
+    a {
+      color: #FFFFFF;
+
+      &:hover, &:focus, &:active {
+        color: #FFFFFF;
+        text-decoration: none;
+      }
+    }
+  }
+  .down-arrow {
+    margin: 0 0 30px -30px;
+  }
+  .doughnutChart {
+    height: 240px !important;
+    margin: 0 auto;
+    width: 240px !important;
+  }
+  .canvas-border {
+    border: 12px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    height: 240px;
+    left: calc(50% - 120px);
+    position: absolute;
+    top: 100px;
+    width: 240px;
+    @media(min-width: $screen-sm-min) {
+      left: 68px;
+      top: 111px;
+    }
+    @media(min-width: $screen-md-min) {
+      left: 42px;
+    }
+    @media(min-width: $screen-lg-min) {
+      left: 75px;      
+    }
+  }
+  .update {
+    color: #a5a5a5;
+    font-family: $title-font;
+    font-size: 18px;
+    letter-spacing: .5px;
+    line-height: 18px;
+    margin: 40px 0 20px;
+    text-align: center;
+  }
+  .shipdata-list {
+    list-style: none;
+    padding: 0;
+    li {
+      color: #000;
+      font-family: $droid-font;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: .5px;
+      line-height: 14px;
+      padding-left: 10px;
+      padding-bottom: 5px;
+      position: relative;
+      display: block;
+      @media(min-width: $screen-lg-min) {
+        display: inline-block;
+        padding-bottom: 0;
+        padding-left: 0;
+        width: 49%;
+      }
+      &:before {
+        background-color: #81b4e1;
+        border-radius: 50%;
+        content: '';
+        display: inline-block;
+        height: 8px;
+        left: -11px;
+        margin: 0 5px 0 0;
+        position: absolute;
+        top: 3px;
+        vertical-align: middle;
+        width: 8px;
+        @media(min-width: $screen-sm-min) {
+          margin: -3px 5px 0 0;
+          position: static;
+        }
+        @media(min-width: $screen-md-min) {
+          left: -11px;
+          margin: 0;
+          position: absolute;
+          top: 3px;
+        }
+        @media(min-width: $screen-lg-min) {
+          margin: -3px 10px 0 0;
+          position: static;
+        }
+      }
+      &:nth-child(2) {
+        &:before {
+          background-color: #7f83bf;
+        }
+      }
+      &:nth-child(3) {
+        &:before {
+          background-color: #797985;
+        }
+      }
+      &:nth-child(4) {
+        &:before {
+          background-color: #ee5c80;
+        }
+      }
+      &:nth-child(5) {
+        &:before {
+          background-color: #c3bb2f;
+        }
+      }
+      &:nth-child(6) {
+        &:before {
+          background-color: #e4dd4c;
+        }
+      }
+      &:nth-child(7) {
+        &:before {
+          background-color: #f5a45c;
+        }
+      }
+    }
+  }
+}

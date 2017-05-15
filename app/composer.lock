@@ -1,0 +1,1681 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "359c90810163f2e41b977fe5b6e8c7ec",
+    "content-hash": "6efe308ccaba4e4705d65ebe9ff3f88a",
+    "packages": [
+        {
+            "name": "advanced-custom-fields-pro",
+            "version": "5.5.3",
+            "dist": {
+                "type": "zip",
+                "url": "composer-artifacts/advanced-custom-fields-pro-5.5.3.zip",
+                "reference": null,
+                "shasum": "26a357526c4c35da6f17e625d720862b41e99b04"
+            },
+            "type": "wordpress-plugin"
+        },
+        {
+            "name": "composer/installers",
+            "version": "v1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/installers.git",
+                "reference": "79ad876c7498c0bbfe7eed065b8651c93bfd6045"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/installers/zipball/79ad876c7498c0bbfe7eed065b8651c93bfd6045",
+                "reference": "79ad876c7498c0bbfe7eed065b8651c93bfd6045",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0"
+            },
+            "replace": {
+                "roundcube/plugin-installer": "*",
+                "shama/baton": "*"
+            },
+            "require-dev": {
+                "composer/composer": "1.0.*@dev",
+                "phpunit/phpunit": "4.1.*"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Composer\\Installers\\Plugin",
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\Installers\\": "src/Composer/Installers"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Robinson Young",
+                    "email": "kyle@dontkry.com",
+                    "homepage": "https://github.com/shama"
+                }
+            ],
+            "description": "A multi-framework Composer library installer",
+            "homepage": "https://composer.github.io/installers/",
+            "keywords": [
+                "Craft",
+                "Dolibarr",
+                "Eliasis",
+                "Hurad",
+                "ImageCMS",
+                "Kanboard",
+                "MODX Evo",
+                "Mautic",
+                "Maya",
+                "OXID",
+                "Plentymarkets",
+                "Porto",
+                "RadPHP",
+                "SMF",
+                "Thelia",
+                "WolfCMS",
+                "agl",
+                "aimeos",
+                "annotatecms",
+                "attogram",
+                "bitrix",
+                "cakephp",
+                "chef",
+                "cockpit",
+                "codeigniter",
+                "concrete5",
+                "croogo",
+                "dokuwiki",
+                "drupal",
+                "elgg",
+                "expressionengine",
+                "fuelphp",
+                "grav",
+                "installer",
+                "itop",
+                "joomla",
+                "kohana",
+                "laravel",
+                "lavalite",
+                "lithium",
+                "magento",
+                "mako",
+                "mediawiki",
+                "modulework",
+                "moodle",
+                "phpbb",
+                "piwik",
+                "ppi",
+                "puppet",
+                "reindex",
+                "roundcube",
+                "shopware",
+                "silverstripe",
+                "sydes",
+                "symfony",
+                "typo3",
+                "wordpress",
+                "yawik",
+                "zend",
+                "zikula"
+            ],
+            "time": "2017-04-24 06:37:16"
+        },
+        {
+            "name": "guzzlehttp/guzzle",
+            "version": "6.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/guzzle.git",
+                "reference": "8d6c6cc55186db87b7dc5009827429ba4e9dc006"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/8d6c6cc55186db87b7dc5009827429ba4e9dc006",
+                "reference": "8d6c6cc55186db87b7dc5009827429ba4e9dc006",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/promises": "^1.0",
+                "guzzlehttp/psr7": "^1.4",
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "ext-curl": "*",
+                "phpunit/phpunit": "^4.0",
+                "psr/log": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "6.2-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/functions_include.php"
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle is a PHP HTTP client library",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "client",
+                "curl",
+                "framework",
+                "http",
+                "http client",
+                "rest",
+                "web service"
+            ],
+            "time": "2017-02-28 22:50:30"
+        },
+        {
+            "name": "guzzlehttp/promises",
+            "version": "v1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/promises.git",
+                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/a59da6cf61d80060647ff4d3eb2c03a2bc694646",
+                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Promise\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle promises library",
+            "keywords": [
+                "promise"
+            ],
+            "time": "2016-12-20 10:07:11"
+        },
+        {
+            "name": "guzzlehttp/psr7",
+            "version": "1.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/psr7.git",
+                "reference": "f5b8a8512e2b58b0071a7280e39f14f72e05d87c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/f5b8a8512e2b58b0071a7280e39f14f72e05d87c",
+                "reference": "f5b8a8512e2b58b0071a7280e39f14f72e05d87c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "psr/http-message": "~1.0"
+            },
+            "provide": {
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                },
+                {
+                    "name": "Tobias Schultze",
+                    "homepage": "https://github.com/Tobion"
+                }
+            ],
+            "description": "PSR-7 message implementation that also provides common utility methods",
+            "keywords": [
+                "http",
+                "message",
+                "request",
+                "response",
+                "stream",
+                "uri",
+                "url"
+            ],
+            "time": "2017-03-20 17:10:46"
+        },
+        {
+            "name": "intercom/intercom-php",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/intercom/intercom-php.git",
+                "reference": "cc64a7a7aa206efbd8226fe6e1a4b4122fd18045"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/intercom/intercom-php/zipball/cc64a7a7aa206efbd8226fe6e1a4b4122fd18045",
+                "reference": "cc64a7a7aa206efbd8226fe6e1a4b4122fd18045",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "~6.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.0.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Intercom\\": [
+                        "src"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache Version 2"
+            ],
+            "authors": [
+                {
+                    "name": "Intercom Platform Team",
+                    "homepage": "http://intercom.io"
+                }
+            ],
+            "description": "Intercom API client built on top of Guzzle 6",
+            "keywords": [
+                "Guzzle",
+                "api",
+                "intercom",
+                "intercom.io"
+            ],
+            "time": "2016-05-03 11:46:30"
+        },
+        {
+            "name": "ircmaxell/password-compat",
+            "version": "v1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ircmaxell/password_compat.git",
+                "reference": "5c5cde8822a69545767f7c7f3058cb15ff84614c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ircmaxell/password_compat/zipball/5c5cde8822a69545767f7c7f3058cb15ff84614c",
+                "reference": "5c5cde8822a69545767f7c7f3058cb15ff84614c",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "lib/password.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anthony Ferrara",
+                    "email": "ircmaxell@php.net",
+                    "homepage": "http://blog.ircmaxell.com"
+                }
+            ],
+            "description": "A compatibility library for the proposed simplified password hashing algorithm: https://wiki.php.net/rfc/password_hash",
+            "homepage": "https://github.com/ircmaxell/password_compat",
+            "keywords": [
+                "hashing",
+                "password"
+            ],
+            "time": "2014-11-20 16:49:30"
+        },
+        {
+            "name": "johnpbloch/wordpress",
+            "version": "4.7.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/johnpbloch/wordpress.git",
+                "reference": "9f1f8eb6c37d10d73b9d7946c0ab5425a5492a9a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/9f1f8eb6c37d10d73b9d7946c0ab5425a5492a9a",
+                "reference": "9f1f8eb6c37d10d73b9d7946c0ab5425a5492a9a",
+                "shasum": ""
+            },
+            "require": {
+                "johnpbloch/wordpress-core-installer": "~0.2",
+                "php": ">=5.3.2"
+            },
+            "type": "wordpress-core",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "WordPress Community",
+                    "homepage": "http://wordpress.org/about/"
+                }
+            ],
+            "description": "WordPress is web software you can use to create a beautiful website or blog.",
+            "homepage": "http://wordpress.org/",
+            "keywords": [
+                "blog",
+                "cms"
+            ],
+            "time": "2017-03-06 16:01:58"
+        },
+        {
+            "name": "johnpbloch/wordpress-core-installer",
+            "version": "0.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/johnpbloch/wordpress-core-installer.git",
+                "reference": "a04c2c383ef13aae077f36799ed2eafdebd618d2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core-installer/zipball/a04c2c383ef13aae077f36799ed2eafdebd618d2",
+                "reference": "a04c2c383ef13aae077f36799ed2eafdebd618d2",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0"
+            },
+            "conflict": {
+                "composer/installers": "<1.0.6"
+            },
+            "require-dev": {
+                "composer/composer": "1.0.*@dev"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "johnpbloch\\Composer\\WordPressCorePlugin"
+            },
+            "autoload": {
+                "psr-0": {
+                    "johnpbloch\\Composer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "John P. Bloch",
+                    "email": "me@johnpbloch.com"
+                }
+            ],
+            "description": "A custom installer to handle deploying WordPress with composer",
+            "keywords": [
+                "wordpress"
+            ],
+            "time": "2015-06-11 15:15:30"
+        },
+        {
+            "name": "mailchimp-for-wp-pro",
+            "version": "2.7.5",
+            "dist": {
+                "type": "zip",
+                "url": "composer-artifacts/mailchimp-for-wp-pro-2.7.5.zip",
+                "reference": null,
+                "shasum": "a284c3fba2adeee4b20de902fd42b3731aa2dedc"
+            },
+            "type": "wordpress-plugin"
+        },
+        {
+            "name": "paragonie/random_compat",
+            "version": "v2.0.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/paragonie/random_compat.git",
+                "reference": "634bae8e911eefa89c1abfbf1b66da679ac8f54d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/634bae8e911eefa89c1abfbf1b66da679ac8f54d",
+                "reference": "634bae8e911eefa89c1abfbf1b66da679ac8f54d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*|5.*"
+            },
+            "suggest": {
+                "ext-libsodium": "Provides a modern crypto API that can be used to generate random bytes."
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "lib/random.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paragon Initiative Enterprises",
+                    "email": "security@paragonie.com",
+                    "homepage": "https://paragonie.com"
+                }
+            ],
+            "description": "PHP 5.x polyfill for random_bytes() and random_int() from PHP 7",
+            "keywords": [
+                "csprng",
+                "pseudorandom",
+                "random"
+            ],
+            "time": "2017-03-13 16:27:32"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "time": "2016-08-06 14:39:51"
+        },
+        {
+            "name": "ramsey/array_column",
+            "version": "1.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ramsey/array_column.git",
+                "reference": "f8e52eb28e67eb50e613b451dd916abcf783c1db"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ramsey/array_column/zipball/f8e52eb28e67eb50e613b451dd916abcf783c1db",
+                "reference": "f8e52eb28e67eb50e613b451dd916abcf783c1db",
+                "shasum": ""
+            },
+            "require-dev": {
+                "jakub-onderka/php-parallel-lint": "0.8.*",
+                "phpunit/phpunit": "~4.5",
+                "satooshi/php-coveralls": "0.6.*",
+                "squizlabs/php_codesniffer": "~2.2"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/array_column.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ben Ramsey",
+                    "homepage": "http://benramsey.com"
+                }
+            ],
+            "description": "Provides functionality for array_column() to projects using PHP earlier than version 5.5.",
+            "homepage": "https://github.com/ramsey/array_column",
+            "keywords": [
+                "array",
+                "array_column",
+                "column"
+            ],
+            "time": "2015-03-20 22:07:39"
+        },
+        {
+            "name": "schibsted/sdk-php",
+            "version": "2.4.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schibsted/sdk-php.git",
+                "reference": "e06585241c8c23c7c01ed46b381df0f40b7280ad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schibsted/sdk-php/zipball/e06585241c8c23c7c01ed46b381df0f40b7280ad",
+                "reference": "e06585241c8c23c7c01ed46b381df0f40b7280ad",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.3.*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/Client.php",
+                    "src/Client/Exception.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Schibsted Payment",
+                    "homepage": "https://github.com/schibsted/sdk-php"
+                }
+            ],
+            "description": "OAuth2 and REST client for connecting and accessing the SPiD API.",
+            "homepage": "https://github.com/schibsted/sdk-php",
+            "keywords": [
+                "SPiD",
+                "api",
+                "oauth2",
+                "php",
+                "rest"
+            ],
+            "time": "2015-11-08 11:19:03"
+        },
+        {
+            "name": "symfony/intl",
+            "version": "v3.2.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/intl.git",
+                "reference": "7aeef013ee0f20add22d3c2f827d241408a604f7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/intl/zipball/7aeef013ee0f20add22d3c2f827d241408a604f7",
+                "reference": "7aeef013ee0f20add22d3c2f827d241408a604f7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9",
+                "symfony/polyfill-intl-icu": "~1.0"
+            },
+            "require-dev": {
+                "symfony/filesystem": "~2.8|~3.0"
+            },
+            "suggest": {
+                "ext-intl": "to use the component with locales other than \"en\""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Intl\\": ""
+                },
+                "classmap": [
+                    "Resources/stubs"
+                ],
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bernhard Schussek",
+                    "email": "bschussek@gmail.com"
+                },
+                {
+                    "name": "Eriksen Costa",
+                    "email": "eriksen.costa@infranology.com.br"
+                },
+                {
+                    "name": "Igor Wiedler",
+                    "email": "igor@wiedler.ch"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "A PHP replacement layer for the C intl extension that includes additional data from the ICU library.",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "i18n",
+                "icu",
+                "internationalization",
+                "intl",
+                "l10n",
+                "localization"
+            ],
+            "time": "2017-03-05 17:42:14"
+        },
+        {
+            "name": "symfony/polyfill",
+            "version": "v1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill.git",
+                "reference": "385d033a8e1d8778446d699ecbd886480716eba7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill/zipball/385d033a8e1d8778446d699ecbd886480716eba7",
+                "reference": "385d033a8e1d8778446d699ecbd886480716eba7",
+                "shasum": ""
+            },
+            "require": {
+                "ircmaxell/password-compat": "~1.0",
+                "paragonie/random_compat": "~1.0|~2.0",
+                "php": ">=5.3.3",
+                "symfony/intl": "~2.3|~3.0"
+            },
+            "replace": {
+                "symfony/polyfill-apcu": "self.version",
+                "symfony/polyfill-iconv": "self.version",
+                "symfony/polyfill-intl-grapheme": "self.version",
+                "symfony/polyfill-intl-icu": "self.version",
+                "symfony/polyfill-intl-normalizer": "self.version",
+                "symfony/polyfill-mbstring": "self.version",
+                "symfony/polyfill-php54": "self.version",
+                "symfony/polyfill-php55": "self.version",
+                "symfony/polyfill-php56": "self.version",
+                "symfony/polyfill-php70": "self.version",
+                "symfony/polyfill-php71": "self.version",
+                "symfony/polyfill-util": "self.version",
+                "symfony/polyfill-xml": "self.version"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\": "src/"
+                },
+                "files": [
+                    "src/Apcu/bootstrap.php",
+                    "src/Php54/bootstrap.php",
+                    "src/Php55/bootstrap.php",
+                    "src/Php56/bootstrap.php",
+                    "src/Php70/bootstrap.php",
+                    "src/Php71/bootstrap.php",
+                    "src/Iconv/bootstrap.php",
+                    "src/Intl/Grapheme/bootstrap.php",
+                    "src/Intl/Icu/bootstrap.php",
+                    "src/Intl/Normalizer/bootstrap.php",
+                    "src/Mbstring/bootstrap.php",
+                    "src/Xml/bootstrap.php"
+                ],
+                "classmap": [
+                    "src/Intl/Normalizer/Resources/stubs",
+                    "src/Php70/Resources/stubs",
+                    "src/Php54/Resources/stubs"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfills backporting features to lower PHP versions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compat",
+                "compatibility",
+                "polyfill",
+                "shim"
+            ],
+            "time": "2016-11-14 01:15:23"
+        },
+        {
+            "name": "voku/arrayy",
+            "version": "2.2.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/voku/Arrayy.git",
+                "reference": "e9b84ecfe07f39eebc3665b4b9d5c7c6bd2e2852"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/voku/Arrayy/zipball/e9b84ecfe07f39eebc3665b4b9d5c7c6bd2e2852",
+                "reference": "e9b84ecfe07f39eebc3665b4b9d5c7c6bd2e2852",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "ramsey/array_column": "~1.1",
+                "voku/portable-utf8": "~3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Arrayy\\": "src/"
+                },
+                "files": [
+                    "src/Create.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lars Moelleken",
+                    "email": "lars@moelleken.org",
+                    "homepage": "http://www.moelleken.org/",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Array manipulation library for PHP, called Arrayy!",
+            "keywords": [
+                "Arrayy",
+                "array",
+                "helpers",
+                "manipulation",
+                "methods",
+                "utility",
+                "utils"
+            ],
+            "time": "2016-12-16 09:00:17"
+        },
+        {
+            "name": "voku/portable-utf8",
+            "version": "3.1.19",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/voku/portable-utf8.git",
+                "reference": "0c7b1d471f36fd7a1178cca9bfea0db40bb63a6e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/voku/portable-utf8/zipball/0c7b1d471f36fd7a1178cca9bfea0db40bb63a6e",
+                "reference": "0c7b1d471f36fd7a1178cca9bfea0db40bb63a6e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "symfony/polyfill": "~1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0|~5.0"
+            },
+            "suggest": {
+                "ext-iconv": "Use iconv for best performance",
+                "ext-intl": "Use Intl for best performance",
+                "ext-mbstring": "Use Mbstring for best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "voku\\": "src/voku/"
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "(Apache-2.0 or GPL-2.0)"
+            ],
+            "authors": [
+                {
+                    "name": "Hamid Sarfraz",
+                    "homepage": "http://pageconfig.com/"
+                },
+                {
+                    "name": "Lars Moelleken",
+                    "homepage": "http://www.moelleken.org/"
+                },
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                }
+            ],
+            "description": "Portable UTF-8 library with polyfill / shim for Iconv, Intl, Mbstring, Normalizrer etc.",
+            "homepage": "https://github.com/voku/portable-utf8",
+            "keywords": [
+                "UTF",
+                "clean",
+                "php",
+                "unicode",
+                "utf-8",
+                "utf8"
+            ],
+            "time": "2017-04-08 14:24:19"
+        },
+        {
+            "name": "voku/session2db",
+            "version": "1.0.13",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/voku/session2db.git",
+                "reference": "5e24298797398c493fa9a0dbaa36c53979458f44"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/voku/session2db/zipball/5e24298797398c493fa9a0dbaa36c53979458f44",
+                "reference": "5e24298797398c493fa9a0dbaa36c53979458f44",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "voku/portable-utf8": "~3.0",
+                "voku/simple-mysqli": "~3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "voku\\helper\\": "src/voku/helper/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Stefan Gabos",
+                    "email": "contact@stefangabos.ro",
+                    "homepage": "http://stefangabos.ro/",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Lars Moelleken",
+                    "email": "lars@moelleken.org",
+                    "homepage": "http://moelleken.org/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A PHP library acting as a wrapper for PHP's default session handling functions which stores data in a MySQL database, providing both better performance and better security and protection against session fixation and session hijacking.",
+            "homepage": "http://stefangabos.ro/php-libraries/zebra-session/",
+            "keywords": [
+                "database",
+                "fixation",
+                "flash",
+                "flashdata",
+                "hijack",
+                "locking",
+                "mysql",
+                "mysqli",
+                "session"
+            ],
+            "time": "2016-08-15 10:17:01"
+        },
+        {
+            "name": "voku/simple-cache",
+            "version": "2.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/voku/simple-cache.git",
+                "reference": "6c719292ee04a9589b50859ff8910e3499bab831"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/voku/simple-cache/zipball/6c719292ee04a9589b50859ff8910e3499bab831",
+                "reference": "6c719292ee04a9589b50859ff8910e3499bab831",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "voku\\cache\\": "src/voku/cache/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lars Moelleken",
+                    "homepage": "http://www.moelleken.org/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Simple Cache library",
+            "homepage": "https://github.com/voku/simple-cache",
+            "keywords": [
+                "cache",
+                "caching",
+                "php",
+                "simple cache"
+            ],
+            "time": "2017-03-15 08:26:45"
+        },
+        {
+            "name": "voku/simple-mysqli",
+            "version": "v3.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/voku/simple-mysqli.git",
+                "reference": "5dd08434fedf9b42f2052b0cd5fea50594f8fe28"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/voku/simple-mysqli/zipball/5dd08434fedf9b42f2052b0cd5fea50594f8fe28",
+                "reference": "5dd08434fedf9b42f2052b0cd5fea50594f8fe28",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "voku/arrayy": "~2.0",
+                "voku/portable-utf8": "~3.0",
+                "voku/simple-cache": "~2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "voku\\db\\": "src/voku/db/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jonathan Tavares",
+                    "email": "the.entomb@gmail.com",
+                    "homepage": "https://github.com/entomb",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Lars Moelleken",
+                    "email": "lars@moelleken.org",
+                    "homepage": "https://github.com/voku",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Simple MySQLi library",
+            "homepage": "https://github.com/voku/simple-mysqli",
+            "keywords": [
+                "db",
+                "mysqli",
+                "php",
+                "simple db"
+            ],
+            "time": "2016-11-02 14:36:48"
+        },
+        {
+            "name": "wpackagist-plugin/acast",
+            "version": "0.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/acast/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/acast.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/acast/"
+        },
+        {
+            "name": "wpackagist-plugin/acf-tablepress",
+            "version": "1.3.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/acf-tablepress/",
+                "reference": "tags/1.3.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/acf-tablepress.1.3.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/acf-tablepress/"
+        },
+        {
+            "name": "wpackagist-plugin/advanced-cron-manager",
+            "version": "1.5",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/advanced-cron-manager/",
+                "reference": "tags/1.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/advanced-cron-manager.1.5.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/advanced-cron-manager/"
+        },
+        {
+            "name": "wpackagist-plugin/amazon-s3-and-cloudfront",
+            "version": "1.1.5",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/amazon-s3-and-cloudfront/",
+                "reference": "tags/1.1.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/amazon-s3-and-cloudfront.1.1.5.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/amazon-s3-and-cloudfront/"
+        },
+        {
+            "name": "wpackagist-plugin/amazon-web-services",
+            "version": "1.0.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/amazon-web-services/",
+                "reference": "tags/1.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/amazon-web-services.1.0.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/amazon-web-services/"
+        },
+        {
+            "name": "wpackagist-plugin/cookie-notice",
+            "version": "1.2.38",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/cookie-notice/",
+                "reference": "tags/1.2.38"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/cookie-notice.1.2.38.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/cookie-notice/"
+        },
+        {
+            "name": "wpackagist-plugin/elasticpress",
+            "version": "2.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/elasticpress/",
+                "reference": "tags/2.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/elasticpress.2.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/elasticpress/"
+        },
+        {
+            "name": "wpackagist-plugin/ewww-image-optimizer",
+            "version": "3.2.7",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/ewww-image-optimizer/",
+                "reference": "tags/3.2.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.3.2.7.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/ewww-image-optimizer/"
+        },
+        {
+            "name": "wpackagist-plugin/footable",
+            "version": "0.3.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/footable/",
+                "reference": "tags/0.3.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/footable.0.3.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/footable/"
+        },
+        {
+            "name": "wpackagist-plugin/lazy-load",
+            "version": "0.6.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/lazy-load/",
+                "reference": "tags/0.6.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/lazy-load.0.6.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/lazy-load/"
+        },
+        {
+            "name": "wpackagist-plugin/manual-image-crop",
+            "version": "1.12",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/manual-image-crop/",
+                "reference": "tags/1.12"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/manual-image-crop.1.12.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/manual-image-crop/"
+        },
+        {
+            "name": "wpackagist-plugin/media-library-assistant",
+            "version": "2.41",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/media-library-assistant/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/media-library-assistant.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/media-library-assistant/"
+        },
+        {
+            "name": "wpackagist-plugin/meta-box",
+            "version": "4.11",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/meta-box/",
+                "reference": "tags/4.11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/meta-box.4.11.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/meta-box/"
+        },
+        {
+            "name": "wpackagist-plugin/metronet-profile-picture",
+            "version": "1.4.3",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/metronet-profile-picture/",
+                "reference": "tags/1.4.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/metronet-profile-picture.1.4.3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/metronet-profile-picture/"
+        },
+        {
+            "name": "wpackagist-plugin/query-monitor",
+            "version": "2.13.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/query-monitor/",
+                "reference": "tags/2.13.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/query-monitor.2.13.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/query-monitor/"
+        },
+        {
+            "name": "wpackagist-plugin/regenerate-thumbnails",
+            "version": "2.2.6",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/regenerate-thumbnails/",
+                "reference": "tags/2.2.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/regenerate-thumbnails.2.2.6.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/regenerate-thumbnails/"
+        },
+        {
+            "name": "wpackagist-plugin/rj-quickcharts",
+            "version": "0.6.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/rj-quickcharts/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/rj-quickcharts.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/rj-quickcharts/"
+        },
+        {
+            "name": "wpackagist-plugin/simple-slider-ssp",
+            "version": "1.4.5",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/simple-slider-ssp/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/simple-slider-ssp.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/simple-slider-ssp/"
+        },
+        {
+            "name": "wpackagist-plugin/speed-booster-pack",
+            "version": "2.9",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/speed-booster-pack/",
+                "reference": "tags/2.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/speed-booster-pack.2.9.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/speed-booster-pack/"
+        },
+        {
+            "name": "wpackagist-plugin/tablepress",
+            "version": "1.7",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/tablepress/",
+                "reference": "tags/1.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/tablepress.1.7.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/tablepress/"
+        },
+        {
+            "name": "wpackagist-plugin/varnish-http-purge",
+            "version": "4.0.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/varnish-http-purge/",
+                "reference": "tags/4.0.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/varnish-http-purge.4.0.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/varnish-http-purge/"
+        },
+        {
+            "name": "wpackagist-plugin/w3-total-cache",
+            "version": "0.9.5.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/w3-total-cache/",
+                "reference": "tags/0.9.5.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/w3-total-cache.0.9.5.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/w3-total-cache/"
+        },
+        {
+            "name": "wpackagist-plugin/wordpress-popular-posts",
+            "version": "3.3.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wordpress-popular-posts/",
+                "reference": "tags/3.3.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-popular-posts.3.3.4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wordpress-popular-posts/"
+        },
+        {
+            "name": "wpackagist-plugin/wordpress-seo",
+            "version": "4.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
+                "reference": "tags/4.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.4.4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wordpress-seo/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-mail-smtp",
+            "version": "0.10.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-mail-smtp/",
+                "reference": "tags/0.10.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-mail-smtp.0.10.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-mail-smtp/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-to-twitter",
+            "version": "3.2.17",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-to-twitter/",
+                "reference": "tags/3.2.17"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-to-twitter.3.2.17.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-to-twitter/"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.4"
+    },
+    "platform-dev": []
+}

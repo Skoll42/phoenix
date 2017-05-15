@@ -1,0 +1,29 @@
+.kontrakter-widget {
+    h3 {
+        margin: 0 0 30px -25px;
+        padding: 0 25px;
+        @media(min-width: $screen-sm-min) {
+            margin: 0 0 0 -30px;
+            padding: 0 25px 0 30px;
+        }
+    }
+    .down-arrow {
+        margin: 0 0 20px -30px;
+    }
+    ul {
+        font-family: $droid-font;
+        list-style: none;
+        padding: 0;
+        li {
+            font-size: 14px;
+            line-height: 26px;
+            span {
+                font-weight: 700;
+            }
+            a {
+                color: #000;
+                text-decoration: none;
+            }
+        }
+    }
+}

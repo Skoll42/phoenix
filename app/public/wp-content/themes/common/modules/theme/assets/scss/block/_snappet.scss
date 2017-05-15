@@ -1,0 +1,157 @@
+.snappet {
+  font-family: $oswald-font;
+  margin-bottom: 10px;
+  @media(min-width: $screen-sm-min) {
+    margin-bottom: 30px;
+  }
+
+  header, footer {
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+    a {
+      color: #fff;
+      font-family: $title-font;
+      font-size: 36px;
+      letter-spacing: 0.5px;
+      line-height: 36px;
+      text-decoration: none;
+    }
+  }
+  &.single-snappet {
+    background-color: #fff;
+    font-family: $title-font;
+    h3 {
+      display: inline-block;
+      line-height: 20px;
+      margin: 20px 0 0 20px;
+      padding: 8px 12px;
+      text-align: left;
+      a {
+        color: #fff;
+        font-size: 20px;
+        line-height: 20px;
+      }
+    }  
+    .snappet-body {
+      .title {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18px;
+        margin-bottom: 7px;
+      }
+      .excerpt {
+        color: #262726;
+        font-family: $droid-font;
+        font-size: 14px;
+        line-height: 20px;
+      }  
+    }
+  }
+
+  .snappet-body {
+    background: #ffffff;
+    padding: 20px;
+    article {
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
+      h4 {
+        font-family: $oswald-font;
+        font-size: 16px;
+        font-weight: 700;
+        display: inline-block;
+        line-height: 20px;
+        margin: 0;
+        text-align: left;
+        a {
+          font-size: 20px;
+          line-height: 20px;
+          text-transform: uppercase;
+          word-wrap: break-word;
+        }
+      }
+      p {
+          color: #262726;
+          font-family: $droid-font;
+          font-size: 14px;
+          line-height: 20px;            
+          margin: 8px 0 0;
+          a {
+            color: $main-color-sysla;
+          }
+      }
+    }
+  }
+}
+.category-offshore .snappet .snappet-body article p a {
+  color: $main-color-offshore;
+}
+.category-maritim .snappet .snappet-body article p a {
+  color: $main-color-maritim;
+}
+.category-gronn .snappet .snappet-body article p a {
+  color: $main-color-gronn;
+}
+
+/* Snappet category page */
+
+.post-type-archive-snappet {
+  background-color: #fff;
+}
+.snappet-category-list {
+  .snappet-title {
+    color: #fff;
+    font-family: $titlinggothicfb-cond-font;
+    font-size: 31px;
+    line-height: 31px;
+    margin-bottom: 30px;
+    position: relative;
+    text-align: center;
+    h3 {
+      background-color: $main-color-sysla;
+      margin: 0;
+      padding: 4px 0;
+    }
+    .arrow {
+      border-color: $main-color-sysla transparent transparent;
+      border-style: solid;
+      border-width: 6px 6px 0;
+      bottom: -6px;
+      height: 0;
+      left: 50%;
+      margin-left: -6px;
+      position: absolute;
+      width: 0;
+    }
+  }
+  .article-snappet {
+    border: 1px dotted #5d5a5b;
+    color: #040404;
+    font-family: $georgia-font;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    padding: 30px;
+    h4 {
+      color: #040404 !important;
+      font-family: $titlinggothicfb-cond-font;
+      font-size: 30px;
+      line-height: 32px;
+      margin: 0;
+      @media(min-width: $screen-sm-min) {
+        font-size: 40px;
+        line-height: 42px;
+      }
+    }
+    .snappet-date, p {
+      color: $main-color-sysla;      
+    }
+    p {
+      color: #040404;
+    }
+    a {
+      color: $main-color-sysla;
+    }
+  }
+}

@@ -1,0 +1,102 @@
+.related-articles {
+  font-family: $titlinggothicfb-comp-font;
+  margin-top: 25px;
+  @media(min-width: $screen-sm-min) {
+    margin-top: 50px;
+  }
+  .title {
+    margin-bottom: 25px;
+    text-align: center;
+    @media(min-width: $screen-md-min) {
+      margin-bottom: 45px;
+    }
+    a {
+      color: #241d1d;
+      font-family: $titlinggothicfb-comp-font;
+      font-size: 40px;
+      &:after {
+        background-color: $main-color-sysla;
+        content: "";
+        display: block;
+        height: 2px;
+        margin: 4px auto 0;
+        width: 230px;
+      }
+    }
+  }
+  .article {
+    margin-bottom: 40px;
+    .image-section {
+      cursor: pointer;
+      height: 290px;
+      overflow: hidden;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        -webkit-box-shadow: inset 0 -200px 130px -100px rgba(0, 0, 0, .8);
+        -moz-box-shadow: inset 0 -200px 130px -100px rgba(0, 0, 0, .8);
+        box-shadow: inset 0 -200px 130px -100px rgba(0, 0, 0, .8);
+        z-index: 1;
+      }
+      .image {
+        display: block;
+        height: 100%;
+        div {
+          height: 100%;
+          overflow: visible;
+        }
+        img {
+          height: auto;
+          left: 50%;
+          min-height: 100%;
+          min-width: 100%;
+          position: absolute;
+          top: 50%;
+          @include translate(-50%, -50%);
+          width: auto;
+        }
+      }
+      .date {
+        bottom: 0;
+        color: #fff;
+        font-size: 20px;
+        left: 0;
+        line-height: 24px;
+        margin: 0 0 15px 15px;
+        position: absolute;
+        right: 0;
+        z-index: 1;
+        &:after {
+          background-color: #fff;
+          content: "";
+          display: block;
+          height: 1px;
+          width: 70px;
+        }
+      }
+    }
+    .title {
+      color: #241d1d;
+      display: block;
+      font-size: 36px;
+      line-height: 33px;
+      margin-top: 20px;
+      text-decoration: none;
+    }
+    .excerpt {
+      color: #111111;
+      display: block;
+      font-family: $default-font;
+      font-size: 18px;
+      line-height: 24px;
+      margin-top: 15px;
+      max-height: 120px;
+      text-decoration: none;
+    }
+  }
+}

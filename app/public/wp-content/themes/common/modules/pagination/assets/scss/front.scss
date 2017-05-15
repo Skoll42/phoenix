@@ -1,0 +1,50 @@
+@import "./../../../theme/assets/scss/variables";
+
+.load-more {
+  margin: 20px 0 30px;
+  text-align: center;
+  @media(min-width: $screen-sm-min) {
+    margin: 20px 0 50px;
+  }
+  .loader {
+    display: none;
+  }
+  &.loading {
+    .loader {
+      display: block;
+    }
+    .load-more-button {
+      display: none;
+    }
+  }
+
+  .load-more-button {
+    border: 2px solid $main-color-sysla;
+    border-radius: 20px;
+    color: $main-color-sysla;
+    cursor: pointer;
+    display: inline-block;
+    font-family: $title-font;
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0 auto;
+    outline: 0;
+    padding: 12px 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .navigation {
+    display: none;
+  }
+}
+
+.category-offshore .load-more {
+  .load-more-button {
+    border: 2px solid $main-color-offshore;
+    color: $main-color-offshore;
+  }
+}
+
+.bottom-padding {
+  padding-bottom: 70px;
+}

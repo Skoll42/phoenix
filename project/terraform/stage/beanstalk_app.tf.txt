@@ -1,0 +1,107 @@
+/*
+
+### Creating new environment
+
+
+## New Environment
+
+Web Server Environment
+
+
+## Environment Type
+
+Predefined configuration: Multi-container Docker
+Environment type: Load balancing, auto scaling
+
+
+## Application Version
+
+Source: Sample Application
+
+
+## Environment Information
+
+Environment name: phoenix-stage
+Environment URL: phoenix-stage
+Description: Phoenix Stage
+
+
+## Additional Resources
+
+Check "Create this environment inside a VPC"
+
+
+## Configuration Details
+
+Instance type: t2.nano
+EC2 key pair: betavest-dev
+
+
+## Environment Tags
+
+Application: Phoenix
+Stack: Stage
+
+
+## VPC Configuration
+
+VPC: Should select stage VPC
+Uncheck "Associate Public IP Address"
+    ELB: x.x.5x.x
+    EC2: x.x.8x.x
+VPC security group: phoenix-stage-nat
+
+
+
+### Tuning environment
+
+
+## Instances
+
+EC2 security groups:  "Phoenix Stage App"
+
+
+## Software Configuration
+
+Add Environment Properties:
+  WP_ENV = stage
+  AWS_ACCESS_KEY_ID
+  AWS_SECRET_ACCESS_KEY
+  DOMAIN_NAME
+
+  RDS_HOST
+  RDS_DB_NAME
+  RDS_USERNAME
+  RDS_PASSWORD
+
+
+## Health
+
+Application health check URL: /php_ping
+
+
+## Scaling
+
+Auto Scaling:
+  Min = 1
+  Max = 3
+
+Scaling Trigger:
+  Trigger measurement: CPUUtilization
+  Trigger statistic: Average
+  Unit of measurement: Percent
+  Upper threshold: 70
+  Lower threshold: 10
+
+
+
+
+### Tuning ELB
+
+Go to EC2 Console
+Then go to Load Balancers
+Select your Load Balancer
+Go to tab Security
+Add security group "Phoenix Stage ELB"
+
+*/

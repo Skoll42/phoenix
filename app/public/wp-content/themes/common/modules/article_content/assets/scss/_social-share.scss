@@ -1,0 +1,47 @@
+.social-share {    
+    clear: both;
+    margin: 25px 0;
+    padding-bottom: 25px;    
+    &.offshore, &.maritim {
+        border-bottom: 1px solid #d9d9d9;
+    }
+    .title {
+        font-family: $titlinggothicfb-comp-font;
+        font-size: 26px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .buttons {
+        text-align: center;
+        a {
+            border-radius: 50%;
+            display: inline-block;
+            height: 35px;
+            margin-right: 20px;
+            text-decoration: none;
+            width: 35px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        svg {
+            fill: #fff;
+            height: 30px;
+            margin-top: 3px;
+            width: 30px;
+        }
+        .linkedin {
+            svg {
+                margin-top: 2px;
+                margin-bottom: 1px;
+            }
+        }
+        .email {
+            svg {
+                height: 35px;
+                margin-bottom: -6px;
+                margin-top: 4px;
+            }
+        }
+    }
+}

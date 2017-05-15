@@ -1,0 +1,45 @@
+.byline-block {
+  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid #d9d9d9;
+  color: #858585;
+  font-family: $droid-font;
+  font-size: 18px;
+  margin-top: 24px;
+  padding: 20px 0;
+  .byline-block-content {
+    display: table;
+    width: 100%;
+    & > div {
+      display: table-cell;
+      vertical-align: middle;
+    }
+    .right {
+      width: 100%;
+    }
+  }
+  .author-image {
+    float: left;
+    margin-right: 18px;
+    img {
+      border-radius: 50%;
+    }
+  }
+  .author {
+    color: #a9a9a9;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 3px;
+    @media(min-width: $screen-xs-min) {
+      margin-bottom: 7px;
+    }
+    a, span {
+      color: #241d1d;
+    }
+  }
+  .date {
+    font-size: 14px;
+    span {
+      display: inline-block;
+    }
+  }
+}

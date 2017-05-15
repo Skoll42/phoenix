@@ -1,0 +1,214 @@
+{
+    "key": "group_56a6b2ecae9f7",
+    "title": "Article Header",
+    "fields": [
+        {
+            "layout": "horizontal",
+            "choices": {
+                "image": "Image",
+                "carousel": "Carousel",
+                "embed_code": "Embed Code",
+                "empty": "Empty"
+            },
+            "default_value": "image",
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_52a5e8bf7670f",
+            "label": "Header Type",
+            "name": "article_header_type",
+            "type": "radio",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "horizontal",
+            "choices": {
+                "full": "Full width",
+                "container": "Container width"
+            },
+            "default_value": "container",
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_58ac618746dca",
+            "label": "Header Layout",
+            "name": "article_header_layout",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_52a5e8bf7670f",
+                        "operator": "==",
+                        "value": "image"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "return_format": "id",
+            "preview_size": "bt-medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "key": "field_52a5e8e176710",
+            "label": "Image",
+            "name": "article_header_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_52a5e8bf7670f",
+                        "operator": "==",
+                        "value": "image"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "post_type": [
+                "ssp_slider"
+            ],
+            "taxonomy": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "id",
+            "ui": 1,
+            "key": "field_52a5e95576712",
+            "label": "Carousel",
+            "name": "article_header_carousel",
+            "type": "post_object",
+            "instructions": "Select carousel from list.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_52a5e8bf7670f",
+                        "operator": "==",
+                        "value": "carousel"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "new_lines": "",
+            "maxlength": "",
+            "placeholder": "",
+            "rows": "",
+            "key": "field_55f182bb2648c",
+            "label": "Embed Code",
+            "name": "article_header_embed_code",
+            "type": "textarea",
+            "instructions": "Insert video, map or iframe code here",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_52a5e8bf7670f",
+                        "operator": "==",
+                        "value": "embed_code"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "default_value": "",
+            "delay": 0,
+            "key": "field_52fb8088a5daf",
+            "label": "Header Text",
+            "name": "article_header_text",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_52a5e8bf7670f",
+                        "operator": "!=",
+                        "value": "empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "sponsored"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "podcast"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "featured_image"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1490864933
+}

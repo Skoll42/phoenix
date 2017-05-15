@@ -1,0 +1,102 @@
+{
+    "key": "group_57c429f45e080",
+    "title": "SPiD Settings",
+    "fields": [
+        {
+            "key": "field_57da7de41c5db",
+            "label": "Remains Article Text",
+            "name": "spid_remains_article_text",
+            "type": "wysiwyg",
+            "instructions": "Insert {counter} into text to display number ",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_57da7e071c5dc",
+            "label": "Remains Article Empty Text",
+            "name": "spid_remains_article_empty_text",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0
+        },
+        {
+            "key": "field_582a1f449d426",
+            "label": "Button Text",
+            "name": "spid_stickyfooter_button_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5836ec3565e98",
+            "label": "Enable Cookies Message",
+            "name": "enable_cookies_message",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Vennligst sjekk om du har tillatt informasjonskapsler i din nettleser",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "spid-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1479994451
+}

@@ -1,0 +1,7 @@
+terraform get
+terraform apply -target=module.vpc
+terraform apply -target=module.db
+# create beanstalk app and varnish
+# add env for Route53
+terraform apply -target=module.route53
+terraform apply

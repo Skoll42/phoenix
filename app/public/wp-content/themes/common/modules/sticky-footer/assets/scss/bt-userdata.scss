@@ -1,0 +1,53 @@
+@import "./../../../theme/assets/scss/_variables.scss";
+
+.sticky-footer {
+  .userdata {
+    .button {
+      background: $main-color-sysla;
+      border: 0;
+      &, &:hover, &:active, &:focus {
+        color: #fff;
+      }
+    }
+
+    a {
+      &, &:hover, &:active {
+        color: $main-color-sysla;
+      }
+    }
+
+    .message {
+      display: inline-block;
+      margin-left: 10px;
+      font-family: $default-font;
+      font-style: italic;
+      line-height: 40px;
+
+      a {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .userdata-status {
+    &.userdata-status-default {
+      .userdata-status-agreement, .userdata-status-authorized {
+        display: none;
+      }
+    }
+    &.userdata-status-authorized {
+      .userdata-status-agreement, .userdata-status-default {
+        display: none;
+      }
+    }
+    &.userdata-status-agreement {
+      .userdata-status-authorized, .userdata-status-default {
+        display: none;
+      }
+    }
+  }
+}
+
+body.modal-open .sticky-footer {
+  display: none;
+}

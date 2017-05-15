@@ -1,0 +1,72 @@
+{
+    "key": "group_58b948d2dea9b",
+    "title": "E24 Aksjelive Feed Settings",
+    "fields": [
+        {
+            "default_value": "",
+            "placeholder": "",
+            "key": "field_58b948fafe41f",
+            "label": "E24 Aksjelive Feed URL",
+            "name": "e24_feed_url",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "placeholder": "",
+            "key": "field_58b9493bfe420",
+            "label": "E24 Aksjelive Website URL",
+            "name": "e24_website_url",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "e24feed-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1488538183
+}

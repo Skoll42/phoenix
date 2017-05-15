@@ -1,0 +1,47 @@
+{
+    "key": "group_56ceeab22ab57",
+    "title": "Copyright for image",
+    "fields": [
+        {
+            "key": "field_52d7ac5153eed",
+            "label": "Copyright",
+            "name": "image_copyright",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "formatting": "none",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "attachment",
+                "operator": "==",
+                "value": "all"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [],
+    "active": 1,
+    "description": "",
+    "old_ID": 2866,
+    "modified": 1456403137
+}

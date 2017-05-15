@@ -1,0 +1,160 @@
+@import "../../../theme/assets/scss/variables";
+
+.nexus-wrapper {
+    background-color: #fff;
+    margin: 0 0 10px;
+    padding: 10px 0 20px;
+    @media (min-width: $screen-sm-min) {
+        margin: 0 0 30px 0;
+        padding: 60px 0 90px;
+    }
+    .ad-title {
+        color: #a09797;
+        font-family: $droid-font;
+        font-size: 14px;
+        line-height: 14px;
+        margin: 0 auto 15px;
+        padding-left: 10px;        
+        @media (min-width: $screen-sm-min) {
+            padding-left: 0;
+            width: 580px;
+        }
+    }
+    .nexus-ad {
+        text-align: center;
+        & * {
+            max-width: 100%;
+        }        
+    }
+}
+
+.nexus-skyscrapper-block {
+    position: relative;
+}
+.nexus-skyscrapper {
+    display: none;
+    @media(min-width: 1600px) {
+        display: block;
+        position: absolute;
+        right: -185px;
+        top: 0;
+    }
+    .nexus-wrapper {
+        padding: 0;
+        .ad-title {
+            display: none;
+        }
+    }
+    &.stick {
+        position: fixed;
+        right: calc(50% - 780px);
+        top: 85px;
+    }
+}
+.nexus-top-wrapper {
+    background: #171717;
+    padding: 30px 0;
+    position: relative;
+    z-index: 2;
+    @media (min-width: $screen-md-min) {
+        margin-bottom: 0;
+    }
+    .container {
+        @media (min-width: $screen-md-min) {
+            padding: 0 !important;
+            width: 980px !important;
+        }
+        @media (min-width: $screen-lg-min) {
+            padding: 0 15px;
+            width: 1170px;
+        }
+    }
+    .nexus-wrapper {
+        background-color: transparent;
+        border: 0;
+        margin: 0;
+        padding: 0;
+        .ad-title {
+            color: #c9c9c9;
+            font-size: 10px;
+            line-height: 10px;
+            margin-bottom: 5px;
+            padding: 0;
+            width: auto;
+        }
+        .nexus-ad {
+            overflow: hidden;
+            iframe {
+                @media (min-width: $screen-sm-min) {
+                    margin-left: -18%;
+                    max-width: none;
+                    -ms-zoom: 0.7;
+                    -moz-transform: scale(0.7);
+                    -o-transform: scale(0.7);
+                    -webkit-transform: scale(0.7);
+                }
+                @media (min-width: $screen-md-min) {
+                    max-width: 100%;
+                    margin: 0;
+                    -ms-zoom: 1;
+                    -moz-transform: scale(1);
+                    -o-transform: scale(1);
+                    -webkit-transform: scale(1);
+                }
+            }
+        }
+    }
+}
+
+.nexus-content-wrapper {
+    margin-bottom: 30px;
+    .nexus-wrapper {
+        border: 0;
+        margin: 0;
+        padding: 0;
+        .ad-title {
+            font-size: 10px;
+            line-height: 10px;
+            margin: 0;
+            padding: 20px 0 5px 20px;
+            width: auto;
+        }
+        .nexus-ad {
+            margin: 0 20px;
+            padding-bottom: 20px;
+            overflow: hidden;
+            iframe {
+                max-width: 100%;
+                margin: 0;
+                -ms-zoom: 1;
+                -moz-transform: scale(1);
+                -o-transform: scale(1);
+                -webkit-transform: scale(1);
+                transform:scale(1);
+            }
+        }
+    }
+    &.nexus-sponsored .nexus-wrapper .nexus-ad {
+        margin: 0;
+        iframe {
+            @media (min-width: $screen-md-min) {
+                margin-left: -13px;
+                max-width: none;
+                -ms-zoom: 0.9;
+                -moz-transform: scale(0.9);
+                -o-transform: scale(0.9);
+                -webkit-transform: scale(0.9);
+                transform:scale(0.9);
+            }
+            @media (min-width: $screen-lg-min) {
+                margin-left: 0;
+                max-width: 100%;
+                -ms-zoom: 1;
+                -moz-transform: scale(1);
+                -o-transform: scale(1);
+                -webkit-transform: scale(1);
+                transform:scale(1);
+            }
+        }
+    }
+}

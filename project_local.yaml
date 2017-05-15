@@ -1,0 +1,3 @@
+host: phoenix.lh
+subdomains: [www.phoenix.lh, offshore1.lh, maritime1.lh, syslagronn1.lh]
+ipaddress: 172.16.37.45

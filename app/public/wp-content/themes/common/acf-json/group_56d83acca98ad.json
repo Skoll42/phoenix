@@ -1,0 +1,346 @@
+{
+    "key": "group_56d83acca98ad",
+    "title": "Sponsored Company",
+    "fields": [
+        {
+            "key": "field_550188da0300f",
+            "label": "Header Image",
+            "name": "sponsored_header_image",
+            "type": "image",
+            "instructions": "Upload company header image",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "preview_size": "medium",
+            "library": "all",
+            "return_format": "array",
+            "min_width": 0,
+            "min_height": 0,
+            "min_size": 0,
+            "max_width": 0,
+            "max_height": 0,
+            "max_size": 0,
+            "mime_types": ""
+        },
+        {
+            "key": "field_550189d103012",
+            "label": "Header Text",
+            "name": "sponsored_header_text",
+            "type": "wysiwyg",
+            "instructions": "Fill in header text",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "toolbar": "full",
+            "media_upload": 0,
+            "tabs": "all"
+        },
+        {
+            "key": "field_560050f4e7162",
+            "label": "Keyword",
+            "name": "sponsored_keyword",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "formatting": "none",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_55e7077d74a08",
+            "label": "Header Text in category\/article block",
+            "name": "sponsored_header_block_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "formatting": "html",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5502e3e7b0a56",
+            "label": "Company name",
+            "name": "sponsored_company_name",
+            "type": "text",
+            "instructions": "Fill in the sponsored company name",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "formatting": "none",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5501896403011",
+            "label": "Company Description",
+            "name": "sponsored_company_description",
+            "type": "textarea",
+            "instructions": "Fill in a few words about the company",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5592b344f14cc",
+            "label": "About Company",
+            "name": "sponsored_about_company",
+            "type": "wysiwyg",
+            "instructions": "This will be displayed in \"Hva er dette?\" block ",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "toolbar": "full",
+            "media_upload": 0,
+            "tabs": "all"
+        },
+        {
+            "key": "field_5502e3ffb0a57",
+            "label": "Company excerpt",
+            "name": "sponsored_company_excerpt",
+            "type": "text",
+            "instructions": "Please provide the company excerpt that should be included",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "formatting": "none",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5502e460b0a58",
+            "label": "Company article tail",
+            "name": "sponsored_company_article_tail",
+            "type": "text",
+            "instructions": "Fill in the text that should be show after sponsored article",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "formatting": "none",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5501ab11cc998",
+            "label": "Twitter account name",
+            "name": "sponsored_twitter_account_name",
+            "type": "text",
+            "instructions": "Fill in the twitter account name to fetch the feed",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "formatting": "none",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_55018a1303013",
+            "label": "Twitter hashtag",
+            "name": "sponsored_twitter_hashtag",
+            "type": "text",
+            "instructions": "Provide a hashtag to display tweets",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "formatting": "none",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5506ec8137133",
+            "label": "Amount of tweets",
+            "name": "sponsored_amount_of_tweets",
+            "type": "number",
+            "instructions": "Input the number of tweets that will be displayed",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 7,
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": 1,
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_55e48310af682",
+            "label": "Top Ad Code",
+            "name": "sponsored_top_ad",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_55e48330af683",
+            "label": "Sidebar Ad Code",
+            "name": "sponsored_sidebar_ad",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_55e48347af684",
+            "label": "Mobile Ad Code",
+            "name": "sponsored_mobile_ad",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "",
+            "readonly": 0,
+            "disabled": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "sponsored_company"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [],
+    "active": 1,
+    "description": "",
+    "old_ID": 249241,
+    "modified": 1457011543
+}

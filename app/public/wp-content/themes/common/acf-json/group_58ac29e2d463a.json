@@ -1,0 +1,51 @@
+{
+    "key": "group_58ac29e2d463a",
+    "title": "Snappet Fronted Data",
+    "fields": [
+        {
+            "layout": "horizontal",
+            "choices": {
+                "title": "Title",
+                "content": "Content"
+            },
+            "default_value": [
+                "title",
+                "content"
+            ],
+            "allow_custom": 0,
+            "save_custom": 0,
+            "toggle": 0,
+            "return_format": "value",
+            "key": "field_58ac29e2d9c91",
+            "label": "Fronted Elements",
+            "name": "snappet_fronted_elements",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "snappet"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1487678006
+}

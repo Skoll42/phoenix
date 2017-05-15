@@ -1,0 +1,48 @@
+.gronnfeed-widget {
+  .partner-company {
+    display: inline-block;
+    float: right;
+    margin-top: 15px;
+    a {
+      color: #8f8f8f;
+      display: block;
+      outline: 0;
+      img {
+        max-width: 130px;
+      }
+    }
+  }
+  .down-arrow {
+    margin: 0 0 30px -35px;
+    @media(min-width: $screen-sm-min) {
+      margin: 0 0 30px -30px;
+    }
+  }
+  ol {
+    font-family: $title-font;
+    color: #000;
+    padding-left: 20px;
+    @media(min-width: $screen-sm-min) {
+      padding-left: 30px;
+    }    
+    li {
+      color: #000;
+      font-size: 18px;
+      line-height: 18px;
+      padding: 0 15px;
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }    
+      a {
+        color: #000;
+        display: inline-block;
+        font-family: $droid-font;
+        font-size: 14px;
+        letter-spacing: normal;
+        line-height: 20px;
+        text-decoration: none;
+        vertical-align: top;
+      }
+    }
+  }
+}

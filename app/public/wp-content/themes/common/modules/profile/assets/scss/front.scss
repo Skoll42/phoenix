@@ -1,0 +1,441 @@
+@import "./../../../theme/assets/scss/_variables.scss";
+
+.profile {
+    .login-message {
+        font-family: $titlinggothicfb-comp-font;
+        text-align: center;
+        padding: 50px 0;
+        h3 {
+            font-size: 45px;
+            line-height: 48px;
+            text-transform: uppercase;
+        }
+        button {
+            background: $main-color-sysla;
+            color: #fff;
+            border: 0;
+            letter-spacing: 1px;
+            padding: 10px 30px;
+            font-size: 30px;
+            line-height: 32px;
+            outline: none;
+        }
+    }
+}
+
+.user-profile-wrapper {
+    font-family: $titlinggothicfb-comp-font;
+    .user-profile {
+        background-color: #fff;
+        min-height: 950px;
+        margin: 0 -15px; 
+        @media (min-width: $screen-sm-min) {
+            margin: 0;
+            min-height: 640px;
+        }
+        .nav-tabs {
+            border-bottom: 2px solid #ebebeb;
+            padding-left: 6px;
+            @media (min-width: $screen-sm-min) {
+                padding-left: 10px;
+            }
+            li {
+                letter-spacing: 0.15px;
+                margin-bottom: 0;
+                a {
+                    border: none;
+                    border-radius: 0;
+                    color: #c7c5c5;
+                    font-size: 16px;
+                    line-height: 22px;
+                    margin-right: 0;
+                    padding: 10px;
+                    @media (min-width: $screen-xs-min) {
+                        font-size: 20px;
+                    }
+                    @media (min-width: $screen-sm-min) {
+                        padding: 13px 10px;
+                    }
+                    &:hover, &:focus {
+                        background-color: #fff;
+                        border: none;
+                    }
+                }
+                &.active {
+                    a {
+                        color: #000;
+                    }
+                }
+            }
+        }
+        .expire-message {
+            background-color: #ff7172;
+            color: #fff;
+            font-family: $default-font;
+            font-size: 14px;
+            line-height: 14px;
+            padding: 10px 35px;
+            text-align: center;
+            @media (min-width: $screen-md-min) {
+                margin-bottom: 20px;
+                padding: 10px 0;
+            }
+            a {
+                border-bottom: 1px solid #fff;
+                color: #fff;
+                font-family: $default-font;
+                font-weight: bold;
+            }
+        }
+        .tab-content {
+            padding: 30px 0 0 0;
+            margin: 0;
+            @media (min-width: $screen-sm-min) {
+                padding: 50px 0 0 20px;
+                margin: 0 -15px;
+            }
+            @media (min-width: $screen-md-min) {
+                padding: 30px 0 0 20px;
+            }
+            #settings {
+                .profile-title {
+                    color: #000;
+                    font-size: 20px;
+                    letter-spacing: .5px;
+                    line-height: 20px;
+                    margin-bottom: 25px;
+                }
+                .user-info {
+                    color: #333333;
+                    font-size: 14px;
+                    font-family: $default-font;
+                    line-height: 14px;
+                    list-style: none;
+                    margin-bottom: 50px;
+                    padding: 0;
+                    @media (min-width: $screen-sm-min) {
+                        margin-bottom: 0;
+                    }
+                    .user-name {
+                        font-weight: bold;
+                    }
+                    .user-name, .user-activity, .user-location, .user-email {
+                        margin-bottom: 15px;
+                        &:before {
+                            background: url('../img/user-profile-icon.png') no-repeat;
+                            content: '';
+                            display: inline-block;
+                            height: 15px;
+                            margin-right: 10px;
+                            vertical-align: top;
+                            width: 14px;
+                        }
+                    }
+                    .user-activity {
+                        &:before {
+                            background: url('../img/user-activity-icon.png') no-repeat;
+                            height: 14px;
+                        }
+                    }
+                    .user-location {
+                        &:before {
+                            background: url('../img/user-location-icon.png') no-repeat;
+                            height: 15px;
+                        }
+                    }
+                    .user-email {
+                        &:before {
+                            background: url('../img/user-email-icon.png') no-repeat;
+                            height: 10px;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+                .profile-vertical-divider {
+                    background-color: #c7c5c5;
+                    height: 1px;
+                    margin: 50px 0;
+                    width: 80px;
+                }
+                .profile-history-link {
+                    color: #333333;
+                    font-family: $default-font;
+                    font-size: 14px;
+                    &:after {
+                        background: url('../img/spid-logo.png') no-repeat;
+                        content: '';
+                        display: inline-block;
+                        height: 21px;
+                        margin: -4px 0 0 10px;
+                        vertical-align: middle;
+                        width: 51px;
+                    }
+                }
+                .logout-button {
+                    color: #c7c5c5;
+                    cursor: pointer;
+                    display: block;
+                    font-size: 20px;
+                    letter-spacing: 0.15px;
+                    margin-top: 10px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
+                .abonement-section {
+                    .abonement-title {
+                        color: #000;
+                        font-size: 20px;
+                        letter-spacing: .5px;
+                        line-height: 20px;  
+                        margin-bottom: 20px;                      
+                    }
+                    .buy-block {
+                        background-color: #f6f6f6;
+                        border: 1px solid #cccbcb;
+                        margin-bottom: 50px;
+                        max-width: 355px;
+                        padding: 17px 15px;
+                        .buy-block-title {
+                            color: #8a8a8a;
+                            font-size: 20px;
+                            letter-spacing: .5px;
+                            line-height: 30px;
+                        }
+                        .buy-button {
+                            margin-top: 25px;                                                    
+                            a {
+                                background-color: $main-color-sysla;
+                                color: #fff;
+                                display: inline-block;
+                                font-size: 18px;
+                                letter-spacing: .25px;
+                                line-height: 18px;
+                                padding: 14px 23px;
+                                text-transform: uppercase;
+                            }
+                        }
+                    }
+                    .show-block {
+                        background-color: #f6f6f6;
+                        border: 1px solid #cccbcb;
+                        margin-bottom: 50px;
+                        max-width: 355px;
+                        padding: 17px 15px;
+                        .show-block-title {
+                            color: #8a8a8a;
+                            font-size: 20px;
+                            letter-spacing: .5px;
+                            line-height: 30px;
+                        }
+                        .show-block-note {
+                            color: #8a8a8a;
+                            font-family: $default-font;
+                            font-size: 14px;
+                            margin-top: 5px;
+                        }
+                        .show-button {
+                            margin-top: 25px;                                                    
+                            a {
+                                background-color: $main-color-sysla;
+                                color: #fff;
+                                display: inline-block;
+                                font-size: 18px;
+                                letter-spacing: .25px;
+                                line-height: 18px;
+                                padding: 14px 23px;
+                                text-transform: uppercase;
+                            }
+                        }
+                    }
+                }
+                .nyhetsbrev-section {
+                    .nyhetsbrev-title {
+                        color: #000;
+                        font-size: 20px;
+                        letter-spacing: .5px;
+                        line-height: 20px;  
+                        margin-bottom: 20px;
+                    }
+                    .checkbox {
+                        color: #333333;
+                        font-family: $default-font;
+                        font-size: 14px;
+                        line-height: 14px;
+                        margin: 0 0 25px 0;
+                        label {
+                            padding: 0;
+                            &:after {
+                                content: '';
+                                display: table;
+                                clear: both;        
+                            }
+                            input[type="checkbox"] {
+                                display: none;
+                                &+ .cr {
+                                    &> .cr-icon {                    
+                                        opacity: 0;
+                                        transform: scale(3) rotateZ(-20deg);
+                                        transition: all .3s ease-in;
+                                    }
+                                }
+                                &:checked {
+                                    &+ .cr {
+                                        background-color: $main-color-sysla;
+                                        &> .cr-icon {                        
+                                            opacity: 1;
+                                            transform: scale(1) rotateZ(0deg);
+                                            &:before {
+                                                background-color: $main-color-sysla;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .subscription-name {
+                            display: block;
+                            width: 205px;
+                            &.disabled {
+                                opacity: 0.7;
+                            }
+                        }
+                        .check-note {
+                            color: #cac8c8;
+                            display: block;
+                            font-size: 12px;
+                            line-height: 12px;
+                            margin-top: 5px;
+                            width: 205px;
+                        }
+                        .cr {
+                            border: 1px solid #a9a9a9;
+                            display: inline-block;
+                            float: right;
+                            height: 1.3em;
+                            margin-right: .5em;
+                            position: relative;
+                            width: 1.3em;        
+                            .cr-icon {   
+                                color: #fff;         
+                                font-size: .8em;
+                                left: 14%;
+                                line-height: 0;
+                                position: absolute;
+                                top: 50%;            
+                            }    
+                        }
+                        .loader {
+                            display: inline-block;
+                            float: right;
+                            height: 1.3em;
+                            margin-right: .5em;
+                            position: relative;
+                            width: 1.3em;
+                        }
+                    }
+                }
+                .user-info-mobile {
+                    .profile-vertical-divider {
+                        background-color: #c7c5c5;
+                        height: 1px;
+                        margin: 50px 0;
+                        width: 80px;
+                    }
+                    .profile-history-link {
+                        color: #333333;
+                        font-family: $default-font;
+                        font-size: 14px;
+                        &:after {
+                            background: url('../img/spid-logo.png') no-repeat;
+                            content: '';
+                            display: inline-block;
+                            height: 21px;
+                            margin: -4px 0 0 10px;
+                            vertical-align: middle;
+                            width: 51px;
+                        }
+                    }
+                    .logout-button {
+                        color: #c7c5c5;
+                        cursor: pointer;
+                        display: block;
+                        font-size: 20px;
+                        letter-spacing: 0.15px;
+                        margin-top: 10px;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+ 
+            #voucher {
+                font-family: $titlinggothicfb-comp-font;
+                padding-right: 16px;
+                text-align: center; 
+                text-transform: uppercase;
+                @media (min-width: $screen-sm-min) {
+                    padding-right: 20px;
+                }
+                .top-title {
+                    color: #000;
+                    font-size: 16px;
+                    letter-spacing: .5px;
+                    line-height: 16px;
+                    margin: 0 auto 30px;
+                    @media (min-width: $screen-lg-min) {
+                        margin: 30px auto;
+                    }
+                }
+                .voucher-code {                
+                    input {
+                        border: 2px solid #cccbcb;
+                        color: #cccbcb; 
+                        font-size: 38px;
+                        letter-spacing: .5px;
+                        line-height: 38px;
+                        outline: 0;
+                        padding: 10px 15px;
+                        width: 260px;
+                        &::-webkit-input-placeholder { color: #f0f0f0; }
+                        &:-moz-placeholder { color: #f0f0f0; }
+                        &::-moz-placeholder { color: #f0f0f0; }
+                        &:-ms-input-placeholder { color: #f0f0f0; }
+                    }
+                }
+                .voucher-value {
+                    height: 30px;
+                    &.loading:after {
+                        background: url('../img/ajax-loader.gif') center left no-repeat;
+                        content: '';
+                        display: inline-block;                                                
+                        height: 16px;
+                        margin-top: 5px;                     
+                        vertical-align: middle;
+                        width: 16px;
+                    }
+                }
+                .verification-button {
+                    background-color: $main-color-sysla;
+                    color: #fff;
+                    cursor: pointer;
+                    display: inline-block;
+                    font-size: 18px;
+                    letter-spacing: .25px;
+                    line-height: 18px;
+                    margin-bottom: 30px;
+                    padding: 13px 30px;
+                    text-decoration: none;
+                }
+                .voucher-message {
+                    color: #c7c5c5;
+                    font-size: 20px;
+                    letter-spacing: .5px;
+                    line-height: 20px;
+                    &.error {
+                        color: $main-color-sysla;
+                    }
+                }
+            }
+        }
+    }
+}

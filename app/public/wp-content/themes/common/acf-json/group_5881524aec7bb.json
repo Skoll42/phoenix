@@ -1,0 +1,306 @@
+{
+    "key": "group_5881524aec7bb",
+    "title": "Article Content",
+    "fields": [
+        {
+            "layout": "horizontal",
+            "choices": {
+                "bio": "Bio",
+                "jobben": "Jobben min",
+                "factbox": "FactBox",
+                "map": "Map"
+            },
+            "default_value": [],
+            "allow_custom": 0,
+            "save_custom": 0,
+            "toggle": 0,
+            "return_format": "value",
+            "key": "field_5881525563051",
+            "label": "Elements",
+            "name": "article_content_elements",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "return_format": "id",
+            "preview_size": "bt-avatar",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "key": "field_588152bb63052",
+            "label": "Bio Photo",
+            "name": "article_content_bio_photo",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5881525563051",
+                        "operator": "==",
+                        "value": "bio"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_5881533d63053",
+            "label": "Bio Name",
+            "name": "article_content_bio_name",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5881525563051",
+                        "operator": "==",
+                        "value": "bio"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "default_value": "",
+            "delay": 0,
+            "key": "field_5881535c63054",
+            "label": "Bio Text",
+            "name": "article_content_bio_text",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5881525563051",
+                        "operator": "==",
+                        "value": "bio"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "default_value": "",
+            "delay": 0,
+            "key": "field_5881543d00ede",
+            "label": "Jobben min Text",
+            "name": "article_content_jobben_text",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5881525563051",
+                        "operator": "==",
+                        "value": "jobben"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "sub_fields": [
+                {
+                    "layout": "horizontal",
+                    "choices": {
+                        "wide": "Wide",
+                        "narrow": "Narrow"
+                    },
+                    "default_value": "wide",
+                    "other_choice": 0,
+                    "save_other_choice": 0,
+                    "allow_null": 0,
+                    "return_format": "value",
+                    "key": "field_588155382b242",
+                    "label": "Layout",
+                    "name": "article_content_factbox_layout",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "default_value": "",
+                    "delay": 0,
+                    "key": "field_5881557a2b243",
+                    "label": "Text",
+                    "name": "article_content_factbox_text",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "key": "field_588155ac2b244",
+                    "label": "Copyright",
+                    "name": "article_content_factbox_copyright",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "default_value": "[factbox id=1]",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "key": "field_588155c12b245",
+                    "label": "Shortcode",
+                    "name": "article_content_factbox_shortcode",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                }
+            ],
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "",
+            "collapsed": "",
+            "key": "field_58815490c062e",
+            "label": "FactBox",
+            "name": "article_content_factbox",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5881525563051",
+                        "operator": "==",
+                        "value": "factbox"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "height": 300,
+            "center_lat": "59.913869",
+            "center_lng": "10.752245",
+            "zoom": 9,
+            "key": "field_588154d6c062f",
+            "label": "Map",
+            "name": "article_content_map",
+            "type": "google_map",
+            "instructions": "[map]",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5881525563051",
+                        "operator": "==",
+                        "value": "map"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "sponsored"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1490550507
+}

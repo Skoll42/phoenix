@@ -1,0 +1,122 @@
+.nyhetsbrev-widget {
+  padding: 20px 10px;
+  margin: 0 5px 10px;
+  @media(min-width: $screen-sm-min) {
+    margin: 0 0 10px;
+  }
+  h3 {
+    margin: 0 0 30px -15px;
+    padding: 0 25px 0 20px;
+    @media(min-width: $screen-sm-min) {
+      margin: 0 0 0 -20px;
+      padding: 0 25px;
+    }
+  }
+  .social-block-wrapper {    
+    margin: 0 -10px;
+    .social-block {      
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: 100% auto;
+      border-bottom-style: solid;
+      border-bottom-width: 4px;
+      display: block;
+      height: 280px;
+      margin: 0 auto 10px;
+      width: 280px;
+      @media(min-width: $screen-sm-min) {
+        background-size: cover;
+        background-position: initial;
+        height: 555px;
+        margin: 0 0 30px;
+        width: auto;
+      }
+      @media(min-width: $screen-md-min) {
+        height: 635px;
+      }
+      @media(min-width: $screen-lg-min) {
+        height: 600px;
+      }
+      .social-icon {
+        margin-bottom: 20px;
+        padding-top: 40px;
+        text-align: center;
+        @media(min-width: $screen-sm-min) {
+          padding-top: 240px;
+        }
+      }
+      .share-block {
+        background-color: rgba(38,39,38, 0.7);
+        margin: 0 35px;
+        padding: 20px;
+        text-align: center;
+        @media(min-width: $screen-sm-min) {
+          background-color: rgba(38,39,38, 1);
+          margin: 0 50px;
+        }
+        .share-title {
+          color: #fff;
+          font-family: $droid-font;
+          font-size: 14px;
+          line-height: 20px;
+          margin-bottom: 12px;
+          span {
+            font-weight: 700;
+            display: block;
+          }
+        }
+        .share-icon {
+          display: inline-block;
+        }
+      }
+      &.facebook {
+        background-image: url('../img/social/facebook-background-mobile.png');
+        @media(min-width: $screen-sm-min) {
+          background-image: url('../img/social/facebook-background.png');
+        }
+      }
+      &.twitter {
+        background-image: url('../img/social/twitter-background-mobile.png');
+        @media(min-width: $screen-sm-min) {
+          background-image: url('../img/social/twitter-background.png');
+        }
+      }
+      &.instagram {
+        background-image: url('../img/social/instagram-background-mobile.png');
+        @media(min-width: $screen-sm-min) {
+          background-image: url('../img/social/instagram-background.png');
+        }
+      }
+      &.linkedin {
+        background-image: url('../img/social/linkedin-background-mobile.png');
+        @media(min-width: $screen-sm-min) {
+          background-image: url('../img/social/linkedin-background.png');
+        }
+      }
+    }
+  }
+}
+
+.subscribe-block {
+  border: 1px solid #b4b4b4;
+  border-bottom-width: 4px;
+}
+
+.category-offshore .nyhetsbrev-widget .subscribe-block-wrapper .subscribe-block .subscribe-list input[type="checkbox"] {
+  &:checked {
+    & + label {
+      &:after {
+        background: url('../img/checked-icon-offshore.png') no-repeat;
+      }
+    }
+  }
+}
+
+.category-offshore .nyhetsbrev-widget .subscribe-block-wrapper .subscribe-block .subscribe-email {
+  input {
+    border-color: $main-color-offshore;
+  }
+  .subscribe-button a {
+    border-color: $main-color-offshore;
+  }
+}

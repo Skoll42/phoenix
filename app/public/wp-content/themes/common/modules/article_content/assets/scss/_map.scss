@@ -1,0 +1,13 @@
+.article-content-map {
+  margin: 25px 0;
+  @media(min-width: $screen-md-min) {
+    margin: 50px 0 40px;
+  }
+  .map {
+    height: 400px;
+    width: 100%;
+  }
+  .gmnoprint {
+    display: none;
+  }
+}

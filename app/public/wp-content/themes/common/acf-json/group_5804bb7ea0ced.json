@@ -1,0 +1,45 @@
+{
+    "key": "group_5804bb7ea0ced",
+    "title": "E24 Settings",
+    "fields": [
+        {
+            "default_value": "",
+            "placeholder": "",
+            "key": "field_5804bb862b83c",
+            "label": "Company Logo Url",
+            "name": "e24_company_logo_url",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "sponsored"
+            },
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "sponsored_company:annonse"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1490256505
+}

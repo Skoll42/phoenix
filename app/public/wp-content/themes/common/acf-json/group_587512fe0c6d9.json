@@ -1,0 +1,87 @@
+{
+    "key": "group_587512fe0c6d9",
+    "title": "Category Extend",
+    "fields": [
+        {
+            "default_value": "",
+            "key": "field_58751343e4ec4",
+            "label": "Color",
+            "name": "category_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "horizontal",
+            "choices": [
+                "No",
+                "Yes"
+            ],
+            "default_value": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_58751f3e157c0",
+            "label": "Category has Sickfront",
+            "name": "category_has_sickfront",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "return_format": "id",
+            "preview_size": "full",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "key": "field_58751f9d157c1",
+            "label": "Logo",
+            "name": "category logo",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "category"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1488287219
+}

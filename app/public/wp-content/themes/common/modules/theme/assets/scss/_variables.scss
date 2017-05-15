@@ -1,0 +1,43 @@
+$screen-xs-min: 480px !default;
+$screen-sm-min: 768px !default;
+$screen-md-min: 992px !default;
+$screen-lg-min: 1200px !default;
+
+$georgia-font: Georgia, serif !default;
+$arial-font: Arial, sans-serif !default;
+$titlinggothicfb-comp-font: 'TitlingGothicFB Comp' !default;
+$titlinggothicfb-cond-font: 'TitlingGothicFB Cond' !default;
+$hind-font: 'Hind', sans-serif !default;
+$droid-font: 'Droid Sans', sans-serif !default;
+$oswald-font: 'Oswald', sans-serif !default;
+$opensans-condensed-font: 'Open Sans Condensed', sans-serif !default;
+$roboto-cond-font: 'Roboto Condensed', sans-serif;
+$fishiri-font: 'Arial Helvetica', sans-serif;
+$fishiri-tabs-font: 'Trebuchet MS', Tahoma, Verdana, Arial, sans-serif;
+
+$default-font: $georgia-font;
+$title-font: $titlinggothicfb-comp-font;
+
+$main-color-sysla: #e41f26;
+$main-color-offshore: #f79620;
+$main-color-maritim: #0d6ca6;
+$main-color-gronn: #4fb848;
+$main-color-jobb: #f2b842;
+$main-color-fisk: #4ba3c3;
+$main-color-meninger: #a23e49;
+$main-color-teknologi: #20a39e;
+$bg-grey: #f6f6f6;
+$bg-light: #fff;
+
+
+@mixin transform($transforms) {
+       -moz-transform: $transforms;
+         -o-transform: $transforms;
+        -ms-transform: $transforms;
+    -webkit-transform: $transforms;
+          transform: $transforms;
+}
+
+@mixin translate ($x, $y) {
+   @include transform(translate($x, $y));
+}

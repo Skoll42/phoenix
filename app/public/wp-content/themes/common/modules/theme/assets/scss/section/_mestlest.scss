@@ -1,0 +1,43 @@
+.most-popular-widget {
+  padding: 20px 10px 30px 10px;
+  @media(min-width: $screen-lg-min) {
+    padding: 20px 10px 50px 10px;
+  }
+  h3 {
+    margin: 0 0 30px -15px;
+    padding-left: 25px;
+    @media(min-width: $screen-sm-min) {
+      margin: 0 0 0 -20px;
+      padding-left: 20px;
+    }    
+  }  
+  p.wpp-no-data {
+    font-family: $droid-font;
+    font-size: 14px;
+    line-height: 14px;
+    padding-left: 10px;
+  }
+  ol {
+    font-family: $title-font;
+    color: #000;
+    padding-left: 20px;
+    li {
+      font-size: 18px;
+      line-height: 18px;
+      padding: 0 13px;
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }    
+      a {
+        color: #000;
+        display: inline-block;
+        font-family: $droid-font;
+        font-size: 14px;
+        letter-spacing: normal;
+        line-height: 20px;
+        text-decoration: none;
+        vertical-align: top;
+      }
+    }
+  }
+}

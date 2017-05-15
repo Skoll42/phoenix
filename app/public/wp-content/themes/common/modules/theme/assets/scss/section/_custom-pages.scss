@@ -1,0 +1,128 @@
+.page-template-custom-page {
+    background-color: #fff;
+}
+
+.custom-page-wrapper {
+    color: #000;
+    font-family: $title-font;
+    margin-top: 30px;
+    text-align: center;
+    @media(min-width: $screen-sm-min) {
+        margin-top: 0;
+    }
+    .page-title {
+        border-bottom: 1px solid $main-color-sysla;
+        display: inline-block;
+        font-size: 24px;
+        letter-spacing: .25px;
+        line-height: 24px;
+        margin: 0 auto;
+        padding: 0 22px 10px 22px;
+        text-transform: uppercase;
+    }
+    .horizontal-separator {
+        background-color: #ebebeb;
+        height: 2px;
+        margin-top: 30px;
+    }
+    .custom-page-body {
+        text-align: left;
+        .horizontal-separator {
+            margin: 60px 0 50px;
+        }        
+        h1 {
+            font-size: 46px;
+            letter-spacing: .25px;
+            line-height: 46px;
+            padding: 50px 0 60px;
+            text-align: left;
+            @media(min-width: $screen-md-min) {
+                text-align: center;
+            }
+        }
+        p {
+            font-family: $droid-font;
+            font-size: 18px;
+            letter-spacing: .25px;
+            line-height: 26px;
+            margin-bottom: 30px;
+        }
+        ul {
+            font-family: $droid-font;
+            list-style: none;
+            margin: 0;
+            padding: 50px 0 0;
+            li {
+                display: inline-block;
+                font-size: 18px;
+                letter-spacing: .25px;
+                line-height: 26px;
+                margin-bottom: 60px;
+                vertical-align: top;
+                width: 100%;
+                @media(min-width: $screen-sm-min) {                    
+                    width: 49%;
+                }
+            }
+        }
+        .follow-block {
+            border-top: 2px solid #ebebeb;
+            text-align: center;
+            .follow-title {
+                font-size: 28px;
+                line-height: 28px;
+                padding: 50px 0;
+            }
+            .follow-links {
+                a {
+                    &:not(:last-child) {                        
+                        margin-right: 10px;
+                        @media(min-width: $screen-sm-min) {                        
+                            margin-right: 20px;
+                        }
+                    }
+                    &:nth-child(2), &:nth-child(4) {
+                        margin-right: 0;
+                        @media(min-width: $screen-sm-min) {
+                            margin-right: 20px;
+                        }
+                    }
+                    img {
+                        height: auto;
+                        margin-bottom: 10px;
+                        width: 45%;
+                        @media(min-width: $screen-sm-min) {
+                            margin-bottom: 0;
+                            height: 125px;
+                            width: 125px;
+                        }
+                        @media(min-width: $screen-md-min) {
+                            height: 170px;
+                            width: 170px;
+                        }
+                        @media(min-width: $screen-lg-min) {
+                            height: 180px;
+                            width: 180px;
+                        }
+                    }
+                }
+            }
+            .follow-text {
+                font-family: $droid-font;
+                font-size: 18px;
+                line-height: 18px;
+                margin-top: 50px;
+            }
+        }
+    }
+    .sysla-links {
+        padding-bottom: 50px;
+        a {
+            display: inline-block;
+            margin-bottom: 70px;
+            @media (min-width: $screen-sm-min) {
+              margin-bottom: 0;
+            }            
+        }
+    }
+}

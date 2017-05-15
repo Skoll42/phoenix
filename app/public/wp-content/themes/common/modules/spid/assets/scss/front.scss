@@ -1,0 +1,289 @@
+@import "./../../../theme/assets/scss/_variables.scss";
+
+.subscription-block {
+  background-image: -moz-radial-gradient( 50% 50%, circle farthest-corner, rgb(90,90,90) 1%, rgb(45,45,45) 50%);
+  background-image: -webkit-radial-gradient( 50% 50%, circle farthest-corner, rgb(90,90,90) 1%, rgb(45,45,45) 50%);
+  background-image: -ms-radial-gradient( 50% 50%, circle farthest-corner, rgb(90,90,90) 1%, rgb(45,45,45) 50%);
+  -moz-box-shadow: 0px -100px 130px 10px rgba(255,255,255,1);
+  -webkit-box-shadow: 0px -100px 130px 10px rgba(255,255,255,1);
+  box-shadow: 0px -100px 130px 10px rgba(255,255,255,1);
+  font-family: $titlinggothicfb-comp-font;
+  margin-bottom: -34px;
+  margin-left: -15px;
+  position: relative;
+  width: 100vw;
+  z-index: 2;
+  @media (min-width: $screen-sm-min) {
+    margin-bottom: -18px;
+    margin-left: -45vw;
+    left: 44.6%;
+  }
+  @media (min-width: $screen-md-min) {
+    left: 73.2%;
+    margin-left: -50vw;
+  }
+  @media (min-width: $screen-lg-min) {
+    left: 73.5%;
+  }
+  .top-message-ab {
+    color: #fff;
+    font-size: 28px;
+    letter-spacing: .25px;
+    line-height: 38px;
+    padding: 60px 15px 45px;
+    text-align: center;
+    @media (min-width: $screen-sm-min) {
+      font-size: 34px;
+      line-height: 44px;
+      padding: 55px 15px 40px;
+    }
+  }
+}
+
+.campaign {
+  .subscription-block {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    left: auto;
+    margin: 0;
+    width: auto;
+  }
+}
+
+.subscription-plans-ab {
+  text-align: center;
+  .plan-body {
+    .period, .price {
+      color: #fff;
+      font-size: 60px;
+      letter-spacing: .35px;
+      line-height: 60px;
+      @media (min-width: $screen-sm-min) {
+        font-size: 120px;
+        line-height: 120px;
+      }
+      .days {
+        text-transform: uppercase;
+        vertical-align: middle;
+      }
+      .for {
+        background-color: $main-color-sysla;
+        border-radius: 8px;
+        display: inline-block;
+        font-size: 20px;
+        letter-spacing: .25px;
+        line-height: 20px;
+        padding: 10px;
+        vertical-align: middle;
+        @media (min-width: $screen-sm-min) {
+          border-radius: 12px;
+          font-size: 38px;
+          line-height: 38px;
+          padding: 15px;
+        }
+      }
+    }
+    .price {
+      margin-bottom: 60px;
+      text-transform: uppercase;
+      @media (min-width: $screen-sm-min) {
+        margin-bottom: 40px;
+      }
+    }
+    .try-button {
+      margin-bottom: 55px;
+      @media (min-width: $screen-sm-min) {
+        margin-bottom: 50px;
+      }
+      button {
+        background-color: $main-color-sysla;
+        border: 0;
+        color: #fff;
+        font-size: 34px;
+        letter-spacing: .25px;
+        line-height: 34px;
+        padding: 20px 60px;
+      }
+    }
+    .bottom-text, .bottom-link {
+      color: #fff;
+      font-family: $titlinggothicfb-cond-font;
+      font-size:  20px;
+      letter-spacing: .25px;
+      line-height: 25px;
+      @media (min-width: $screen-sm-min) {
+        line-height: 32px;
+      }
+    }
+    .bottom-link {
+      display: block;
+      text-decoration: underline;
+    }
+    .bottom-link-color {
+      color: $main-color-sysla;
+      display: block;
+      font-family: $titlinggothicfb-cond-font;
+      font-size: 26px;
+      letter-spacing: .25px;
+      line-height: 26px;
+      margin: 55px 0 400px;
+      text-decoration: underline;
+      @media (min-width: $screen-sm-min) {
+        margin: 55px 0 200px;
+      }
+    }
+  }
+}
+
+.sites-information {
+  .logos {
+    padding: 20px 0 200px 0;
+    text-align: center;
+
+    @media (min-width: $screen-sm-min) {
+      padding: 20px 0 400px 0;
+    }
+
+    div {
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: inline-block;
+      height: 130px;
+      margin: 6px;
+      width: 130px;
+      @media (min-width: $screen-xs-min) {
+        height: 140px;
+        margin: 15px;
+        width: 140px;
+      }
+      @media (min-width: $screen-md-min) {
+        background-size: auto;
+        display: inline-block;
+        float: none;
+        height: 180px;
+        margin: 18px;
+        position: static;
+        width: 180px;
+      }
+    }
+  }
+}
+
+.spid-logged-in, .spid-paid-in {
+  padding: 50px 0 20px;
+
+  h2 {
+    font-family: $titlinggothicfb-comp-font;
+    font-size: 50px;
+    letter-spacing: .5px;
+  }
+
+  .sites-information .logos {
+    div {
+      border: 1px solid;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      padding: 0;
+      position: relative;
+
+      &.syslagronn, &.offshore, &.maritim {
+        .logo-wrapper {
+          left: 0;
+          width: 100%;
+          .site-logo {
+            &.sysla-small svg {
+              height: 13px;
+              width: 40px;
+              @media(min-width: $screen-md-min) {
+                height: 20px;
+                width: 62px;
+              }
+            }
+            &.logo-small svg {
+              height: 13px;
+              @media(min-width: $screen-md-min) {
+                height: 20px;
+              }
+            }
+          }
+        }
+      }
+      .logo-wrapper {
+        border: 0;
+        position: absolute;
+        display: inline-block;
+        top: 59px;
+        left: 23px;
+        width: auto;
+        height: auto;
+        margin: 0;
+        @media(min-width: $screen-md-min) {
+          top: 75px;
+          left: 37px;
+        }
+
+        .site-logo {
+          display: inline-block;
+          &.sysla-small, &.logo-small {
+            svg {
+              height: 26px;
+              width: 81px;
+              @media(min-width: $screen-md-min) {
+                height: 34px;
+                width: 105px;
+              }
+            }
+          }
+          &.logo-small {
+            svg {
+              height: 22px;
+              width: auto;
+              // IE 10+ bug fix
+              &#svg-sysla-section {
+                height: 27px;
+                @media(min-width: $screen-md-min) {
+                  height: 37px;
+                }
+              }
+            }
+          }
+          &.gronn-small svg {
+            width: 36px;
+            @media(min-width: $screen-md-min) {
+              width: 55px;
+            }
+          }
+          &.offshore-small svg {
+            width: 58px;
+            @media(min-width: $screen-md-min) {
+              width: 88px;
+            }
+          }
+          &.maritim-small svg {
+            width: 50px;
+            @media(min-width: $screen-md-min) {
+              width: 77px;
+            }
+          }
+        }
+        .logo-divider {
+          border: 0;
+          background-color: #bbbbbb;
+          display: inline-block;
+          height: 26px;
+          margin: -6px 5px;
+          width: 1px;
+          @media(min-width: $screen-md-min) {
+            height: 35px;
+          }
+        }
+      }
+    }
+  }
+}
+
+body.modal-open .subscription-block {
+  display: none;
+}

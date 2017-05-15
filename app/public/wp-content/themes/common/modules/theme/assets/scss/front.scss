@@ -1,0 +1,57 @@
+@import "variables";
+@import "fonts";
+
+html body {
+  -ms-overflow-style: scrollbar;
+  background: $bg-grey;
+}
+
+//Should be always
+#unispring-tp{position:absolute;top:-100000px}
+
+.page-content > .container {
+  background: #fff;
+}
+
+html .float-block {
+  font-family: $default-font;
+  @media(min-width: $screen-sm-min) {
+    margin-bottom: 70px;
+  }
+  @media(min-width: $screen-md-min) {
+    margin-bottom: 0;
+    position: absolute;
+  }
+}
+
+html .float-row {
+    position: relative;
+}
+
+.mobile-separator {
+    background-color: #dcdcdc;
+    -webkit-box-shadow: 0 4px 5px rgba(0,0,0,.15) inset;
+    -moz-box-shadow: 0 4px 5px rgba(0,0,0,.15) inset;
+    box-shadow: 0 4px 5px rgba(0,0,0,.15) inset;
+    height: 7px;
+    margin: 20px -15px;
+    @media(min-width: $screen-sm-min) {
+        display: none;
+    }
+}
+
+.underlined-title {
+  h1, h2, h3, h4, h5, h6 {
+    display: inline-block;
+    font-family: $titlinggothicfb-comp-font;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 60%;
+      height: 1px;
+      border-bottom: 2px solid $main-color-sysla;
+      margin: 0 auto;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+    "key": "group_58db76a4e789e",
+    "title": "Podcast Additional Info",
+    "fields": [
+        {
+            "default_value": "",
+            "placeholder": "",
+            "key": "field_58db77437a00a",
+            "label": "iTunes Podcast Url",
+            "name": "podcast_itunes_url",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_58db814d3d3c1",
+            "label": "Podcast Author(s)",
+            "name": "podcast_author",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "podcast"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1490785428
+}
